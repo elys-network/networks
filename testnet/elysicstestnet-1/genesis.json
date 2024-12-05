@@ -38,7 +38,29 @@
         "sig_verify_cost_ed25519": "590",
         "sig_verify_cost_secp256k1": "1000"
       },
-      "accounts": []
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "elys1x3jqhqt2ttqntxq433pegp4uulfk5g5yummm02",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "elys1rfl6arn0cvwj5hur4sm5epkdxc2ehmajfkfz6w",
+          "pub_key": null,
+          "account_number": "1",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "elys1a2ty6fea78ex0dya2dl7fa937d75ggut3wrvxl",
+          "pub_key": null,
+          "account_number": "2",
+          "sequence": "0"
+        }
+      ]
     },
     "authz": {
       "authorization": []
@@ -48,8 +70,41 @@
         "send_enabled": [],
         "default_send_enabled": true
       },
-      "balances": [],
-      "supply": [],
+      "balances": [
+        {
+          "address": "elys1rfl6arn0cvwj5hur4sm5epkdxc2ehmajfkfz6w",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "6000000000000"
+            }
+          ]
+        },
+        {
+          "address": "elys1x3jqhqt2ttqntxq433pegp4uulfk5g5yummm02",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "6000000000000"
+            }
+          ]
+        },
+        {
+          "address": "elys1a2ty6fea78ex0dya2dl7fa937d75ggut3wrvxl",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "6000000000000"
+            }
+          ]
+        }
+      ],
+      "supply": [
+        {
+          "denom": "uelys",
+          "amount": "18000000000000"
+        }
+      ],
       "denom_metadata": [],
       "send_enabled": []
     },
