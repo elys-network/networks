@@ -30,6 +30,15 @@
       "params": {},
       "entry_list": [
         {
+          "base_denom": "uusdc",
+          "decimals": "6",
+          "denom": "uusdc",
+          "display_name": "USDC",
+          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "commit_enabled": true,
+          "withdraw_enabled": true
+        },
+        {
           "base_denom": "uelys",
           "decimals": "6",
           "denom": "uelys",
