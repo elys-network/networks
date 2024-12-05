@@ -28,7 +28,36 @@
     },
     "assetprofile": {
       "params": {},
-      "entry_list": []
+      "entry_list": [
+        {
+          "base_denom": "uelys",
+          "decimals": "6",
+          "denom": "uelys",
+          "display_name": "ELYS",
+          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "commit_enabled": true,
+          "withdraw_enabled": true
+        },
+        {
+          "base_denom": "ueden",
+          "decimals": "6",
+          "denom": "ueden",
+          "display_name": "EDEN",
+          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "commit_enabled": true,
+          "withdraw_enabled": true
+        },
+        {
+          "base_denom": "uedenb",
+          "decimals": "6",
+          "denom": "uedenb",
+          "display_name": "Eden Boost",
+          "display_symbol": "EdenB",
+          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "commit_enabled": true,
+          "withdraw_enabled": true
+        }
+      ]
     },
     "auth": {
       "params": {
