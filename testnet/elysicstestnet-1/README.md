@@ -24,6 +24,15 @@ To run your node effectively, ensure your machine meets the following requiremen
 
 ## Instructions to Join the Testnet
 
+#### Opt In
+
+Consumer ID: 113
+Chain ID: elysicstestnet-1
+
+```
+gaiad tx provider opt-in 113 --from [YOUR_KEY] --chain-id provider --fees 2000uatom --node https://rpc.provider-sentry-01.ics-testnet.polypore.xyz:443
+```
+
 ### 1. Clone the Repository
 
 Download the consumer chain codebase:
@@ -47,7 +56,7 @@ curl -o $HOME/.elys/config/genesis.json https://raw.githubusercontent.com/elys-n
 #### c. Add persistent peers and seeds in config.toml
 
 #### d. Set the minimum gas prices in the app.toml file. Recommended 0.001uelys
-You can USDC ibc token as well once the relayer is set up and denom is known
+You can use USDC ibc token as well once the relayer is set up and denom is known
 
 #### e. Start the node: `elysd start`
 
