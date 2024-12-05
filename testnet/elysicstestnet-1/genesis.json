@@ -85,7 +85,7 @@
         "consensus_state": null,
         "initial_val_set": []
       },
-      "new_chain": false
+      "new_chain": true
     },
     "commitment": {
       "params": {
@@ -437,7 +437,29 @@
         "life_time_in_blocks": "150"
       },
       "port_id": "oracle",
-      "asset_infos": [],
+      "asset_infos": [
+        {
+          "denom": "uelys",
+          "display": "ELYS",
+          "band_ticker": "ELYS",
+          "elys_ticker": "ELYS",
+          "decimal": "6"
+        },
+        {
+          "denom": "ueden",
+          "display": "EDEN",
+          "band_ticker": "EDEN",
+          "elys_ticker": "EDEN",
+          "decimal": "6"
+        },
+        {
+          "denom": "uedenb",
+          "display": "EDENB",
+          "band_ticker": "EDENB",
+          "elys_ticker": "EDENB",
+          "decimal": "6"
+        }
+      ],
       "prices": [],
       "price_feeders": [
         {
