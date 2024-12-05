@@ -52,7 +52,7 @@
           "decimals": "6",
           "denom": "uedenb",
           "display_name": "Eden Boost",
-          "display_symbol": "EdenB",
+          "display_symbol": "EDENB",
           "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
           "commit_enabled": true,
           "withdraw_enabled": true
