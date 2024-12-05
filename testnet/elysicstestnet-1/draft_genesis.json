@@ -2617,47 +2617,7 @@
       "params": {},
       "airdrop_list": [],
       "genesis_inflation": null,
-      "time_based_inflation_list": [
-        {
-          "start_block_height": "1",
-          "end_block_height": "6307200",
-          "description": "1st Year Inflation",
-          "inflation": {
-            "lm_rewards": "15500000000000",
-            "ics_staking_rewards": "8000000000000",
-            "community_fund": "11000000000000",
-            "strategic_reserve": "11000000000000",
-            "team_tokens_vested": "17000000000000"
-          },
-          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3"
-        },
-        {
-          "start_block_height": "6307201",
-          "end_block_height": "12614401",
-          "description": "2nd Year Inflation",
-          "inflation": {
-            "lm_rewards": "10500000000000",
-            "ics_staking_rewards": "6000000000000",
-            "community_fund": "11500000000000",
-            "strategic_reserve": "12000000000000",
-            "team_tokens_vested": "10000000000000"
-          },
-          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3"
-        },
-        {
-          "start_block_height": "12614402",
-          "end_block_height": "18921602",
-          "description": "3rd Year Inflation",
-          "inflation": {
-            "lm_rewards": "4000000000000",
-            "ics_staking_rewards": "3000000000000",
-            "community_fund": "5750000000000",
-            "strategic_reserve": "7250000000000",
-            "team_tokens_vested": "5000000000000"
-          },
-          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3"
-        }
-      ]
+      "time_based_inflation_list": []
     },
     "tradeshield": {
       "params": {
