@@ -39,10 +39,10 @@ elysd init [your-moniker] --chain-id elysicstestnet-1
 ### 2. Starting the node:
 
 #### a. Fetch the genesis file
-
+```
 curl -o $HOME/.elys/config/genesis.json https://raw.githubusercontent.com/elys-network/networks/refs/heads/main/testnet/elysicstestnet-1/genesis.json
-
-#### b. Replace $HOME/.elys/config/priv_validator_key.json with your cosmos's provider testnet priv_validator_key.json
+```
+#### b. Replace `$HOME/.elys/config/priv_validator_key.json` with your cosmos's provider testnet `priv_validator_key.json`
 
 #### c. Add persistent peers and seeds in config.toml
 
