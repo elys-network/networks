@@ -1,7 +1,7 @@
 {
   "app_name": "elys",
   "app_version": "v0.54.0",
-  "genesis_time": "2024-12-04T21:21:37.556511Z",
+  "genesis_time": "2024-12-05T13:47:56.06735Z",
   "chain_id": "elysicstestnet-1",
   "initial_height": 1,
   "app_hash": null,
@@ -38,29 +38,7 @@
         "sig_verify_cost_ed25519": "590",
         "sig_verify_cost_secp256k1": "1000"
       },
-      "accounts": [
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "elys1x3jqhqt2ttqntxq433pegp4uulfk5g5yummm02",
-          "pub_key": null,
-          "account_number": "0",
-          "sequence": "0"
-        },
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "elys1rfl6arn0cvwj5hur4sm5epkdxc2ehmajfkfz6w",
-          "pub_key": null,
-          "account_number": "1",
-          "sequence": "0"
-        },
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "elys1a2ty6fea78ex0dya2dl7fa937d75ggut3wrvxl",
-          "pub_key": null,
-          "account_number": "2",
-          "sequence": "0"
-        }
-      ]
+      "accounts": []
     },
     "authz": {
       "authorization": []
@@ -70,41 +48,8 @@
         "send_enabled": [],
         "default_send_enabled": true
       },
-      "balances": [
-        {
-          "address": "elys1rfl6arn0cvwj5hur4sm5epkdxc2ehmajfkfz6w",
-          "coins": [
-            {
-              "denom": "uelys",
-              "amount": "6000000000000"
-            }
-          ]
-        },
-        {
-          "address": "elys1x3jqhqt2ttqntxq433pegp4uulfk5g5yummm02",
-          "coins": [
-            {
-              "denom": "uelys",
-              "amount": "6000000000000"
-            }
-          ]
-        },
-        {
-          "address": "elys1a2ty6fea78ex0dya2dl7fa937d75ggut3wrvxl",
-          "coins": [
-            {
-              "denom": "uelys",
-              "amount": "6000000000000"
-            }
-          ]
-        }
-      ],
-      "supply": [
-        {
-          "denom": "uelys",
-          "amount": "18000000000000"
-        }
-      ],
+      "balances": [],
+      "supply": [],
       "denom_metadata": [],
       "send_enabled": []
     },
@@ -120,25 +65,165 @@
     },
     "ccvconsumer": {
       "params": {
-        "enabled": false,
-        "blocks_per_distribution_transmission": "1000",
+        "enabled": true,
+        "blocks_per_distribution_transmission": "100",
         "distribution_transmission_channel": "",
         "provider_fee_pool_addr_str": "",
         "ccv_timeout_period": "2419200s",
-        "transfer_timeout_period": "3600s",
-        "consumer_redistribution_fraction": "0.75",
+        "transfer_timeout_period": "1800s",
+        "consumer_redistribution_fraction": "1",
         "historical_entries": "10000",
         "unbonding_period": "1728000s",
         "soft_opt_out_threshold": "0",
-        "reward_denoms": [],
+        "reward_denoms": [
+          "uelys"
+        ],
         "provider_reward_denoms": [],
         "retry_delay_period": "3600s",
-        "consumer_id": "0"
+        "consumer_id": "113"
       },
       "provider": {
-        "client_state": null,
-        "consensus_state": null,
-        "initial_val_set": []
+        "client_state": {
+          "chain_id": "provider",
+          "trust_level": {
+            "numerator": "1",
+            "denominator": "3"
+          },
+          "trusting_period": "453600s",
+          "unbonding_period": "1814400s",
+          "max_clock_drift": "10s",
+          "frozen_height": {
+            "revision_number": "0",
+            "revision_height": "0"
+          },
+          "latest_height": {
+            "revision_number": "0",
+            "revision_height": "9492846"
+          },
+          "proof_specs": [
+            {
+              "leaf_spec": {
+                "hash": "SHA256",
+                "prehash_key": "NO_HASH",
+                "prehash_value": "SHA256",
+                "length": "VAR_PROTO",
+                "prefix": "AA=="
+              },
+              "inner_spec": {
+                "child_order": [
+                  0,
+                  1
+                ],
+                "child_size": 33,
+                "min_prefix_length": 4,
+                "max_prefix_length": 12,
+                "empty_child": null,
+                "hash": "SHA256"
+              },
+              "max_depth": 0,
+              "min_depth": 0,
+              "prehash_key_before_comparison": false
+            },
+            {
+              "leaf_spec": {
+                "hash": "SHA256",
+                "prehash_key": "NO_HASH",
+                "prehash_value": "SHA256",
+                "length": "VAR_PROTO",
+                "prefix": "AA=="
+              },
+              "inner_spec": {
+                "child_order": [
+                  0,
+                  1
+                ],
+                "child_size": 32,
+                "min_prefix_length": 1,
+                "max_prefix_length": 1,
+                "empty_child": null,
+                "hash": "SHA256"
+              },
+              "max_depth": 0,
+              "min_depth": 0,
+              "prehash_key_before_comparison": false
+            }
+          ],
+          "upgrade_path": [
+            "upgrade",
+            "upgradedIBCState"
+          ],
+          "allow_update_after_expiry": true,
+          "allow_update_after_misbehaviour": true
+        },
+        "consensus_state": {
+          "timestamp": "2024-12-05T13:46:53.576454962Z",
+          "root": {
+            "hash": "bITvLU6Kx/Og//a5OBO9fR3W6fEvcEJ5taMnpwVHKfM="
+          },
+          "next_validators_hash": "59A080ED4667F7C0AF8CEEC8047F7C23C992A5DC69AE2286A89DD64C6829866A"
+        },
+        "initial_val_set": [
+          {
+            "pub_key": {
+              "ed25519": "qt2XhDWO1vufy4xngYfBO1iTdV9GvfahhBF19tLXPGg="
+            },
+            "power": "1980951"
+          },
+          {
+            "pub_key": {
+              "ed25519": "uVwKGrgg7emGGVnV6k7iPH2TROgrRxir6n2u11CXXCE="
+            },
+            "power": "1980951"
+          },
+          {
+            "pub_key": {
+              "ed25519": "u6DhjEs90wiHAFGo1bhTxI+nZHialVuA+GT3XmBPCt8="
+            },
+            "power": "1980951"
+          },
+          {
+            "pub_key": {
+              "ed25519": "ckcNeuspace9+uMmnVojBE/eiOS+SMjVEnnSCAICiqg="
+            },
+            "power": "1980951"
+          },
+          {
+            "pub_key": {
+              "ed25519": "ASI7KhMRIsUFRDxOQN+Bh8BIShHrrzO98izlCC4vMY0="
+            },
+            "power": "1980951"
+          },
+          {
+            "pub_key": {
+              "ed25519": "kKIIXJ+bjU+Go8pXMBNIabhpvSETTPGLnXNmRs4wwI4="
+            },
+            "power": "1980951"
+          },
+          {
+            "pub_key": {
+              "ed25519": "dFlXeLQVymqqOzPL3Nw1RTZkzeMOYssgpQSTkEXjeGo="
+            },
+            "power": "1980951"
+          },
+          {
+            "pub_key": {
+              "ed25519": "0GvoJNnOxsES4rKZj/H7n/IG5CF9cjUkMXh/hHfTIx0="
+            },
+            "power": "1980951"
+          },
+          {
+            "pub_key": {
+              "ed25519": "7AKQTrTJp/DP8qVh8LE0vgDLkQDP7i/yygTwNCr3BGY="
+            },
+            "power": "1980951"
+          },
+          {
+            "pub_key": {
+              "ed25519": "0Riufmw0gHUn3TnmhfFMMxHelvosJi5NY4Ad06r4XiE="
+            },
+            "power": "1980951"
+          }
+        ]
       },
       "new_chain": true
     },
@@ -304,10 +389,6 @@
         "edenb_commit_val": "",
         "max_eden_reward_apr_stakers": "0.300000000000000000",
         "eden_boost_apr": "1.000000000000000000",
-        "dex_rewards_stakers": {
-          "num_blocks": "1",
-          "amount": "0.000000000000000000"
-        },
         "provider_vesting_epoch_identifier": "ten_days",
         "provider_staking_rewards_portion": "0.250000000000000000"
       },
@@ -603,7 +684,7 @@
     "staking": {
       "params": {
         "unbonding_time": "1209600s",
-        "max_validators": 40,
+        "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
         "bond_denom": "uelys",
