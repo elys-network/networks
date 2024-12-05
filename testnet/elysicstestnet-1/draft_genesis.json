@@ -331,7 +331,7 @@
         {
           "identifier": "day",
           "start_time": "0001-01-01T00:00:00Z",
-          "duration": "86400000000000",
+          "duration": "86400s",
           "current_epoch": "0",
           "current_epoch_start_time": "0001-01-01T00:00:00Z",
           "epoch_counting_started": false,
@@ -340,7 +340,7 @@
         {
           "identifier": "fourhours",
           "start_time": "0001-01-01T00:00:00Z",
-          "duration": "14400000000000",
+          "duration": "14400s",
           "current_epoch": "0",
           "current_epoch_start_time": "0001-01-01T00:00:00Z",
           "epoch_counting_started": false,
@@ -349,7 +349,7 @@
         {
           "identifier": "halfhour",
           "start_time": "0001-01-01T00:00:00Z",
-          "duration": "1800000000000",
+          "duration": "1800s",
           "current_epoch": "0",
           "current_epoch_start_time": "0001-01-01T00:00:00Z",
           "epoch_counting_started": false,
@@ -358,7 +358,7 @@
         {
           "identifier": "hour",
           "start_time": "0001-01-01T00:00:00Z",
-          "duration": "3600000000000",
+          "duration": "3600s",
           "current_epoch": "0",
           "current_epoch_start_time": "0001-01-01T00:00:00Z",
           "epoch_counting_started": false,
@@ -367,7 +367,7 @@
         {
           "identifier": "sixhours",
           "start_time": "0001-01-01T00:00:00Z",
-          "duration": "21600000000000",
+          "duration": "21600s",
           "current_epoch": "0",
           "current_epoch_start_time": "0001-01-01T00:00:00Z",
           "epoch_counting_started": false,
@@ -376,7 +376,7 @@
         {
           "identifier": "tenseconds",
           "start_time": "0001-01-01T00:00:00Z",
-          "duration": "10000000000",
+          "duration": "10s",
           "current_epoch": "0",
           "current_epoch_start_time": "0001-01-01T00:00:00Z",
           "epoch_counting_started": false,
@@ -385,7 +385,7 @@
         {
           "identifier": "twelvehours",
           "start_time": "0001-01-01T00:00:00Z",
-          "duration": "43200000000000",
+          "duration": "43200s",
           "current_epoch": "0",
           "current_epoch_start_time": "0001-01-01T00:00:00Z",
           "epoch_counting_started": false,
@@ -394,7 +394,7 @@
         {
           "identifier": "twohours",
           "start_time": "0001-01-01T00:00:00Z",
-          "duration": "7200000000000",
+          "duration": "7200s",
           "current_epoch": "0",
           "current_epoch_start_time": "0001-01-01T00:00:00Z",
           "epoch_counting_started": false,
@@ -403,7 +403,7 @@
         {
           "identifier": "week",
           "start_time": "0001-01-01T00:00:00Z",
-          "duration": "604800000000000",
+          "duration": "604800s",
           "current_epoch": "0",
           "current_epoch_start_time": "0001-01-01T00:00:00Z",
           "epoch_counting_started": false,
