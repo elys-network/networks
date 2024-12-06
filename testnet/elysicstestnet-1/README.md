@@ -24,7 +24,7 @@ To run your node effectively, ensure your machine meets the following requiremen
 
 ## Instructions to Join the Testnet
 
-#### Opt In
+#### Opt In [Required only for Validators]
 
 Consumer ID: 113
 Chain ID: elysicstestnet-1
@@ -51,7 +51,7 @@ elysd init [your-moniker] --chain-id elysicstestnet-1
 ```
 curl -o $HOME/.elys/config/genesis.json https://raw.githubusercontent.com/elys-network/networks/refs/heads/main/testnet/elysicstestnet-1/genesis.json
 ```
-#### b. Replace `$HOME/.elys/config/priv_validator_key.json` with your cosmos's provider testnet `priv_validator_key.json` Note: You can also use another priv_validator_key.json The instructions for it can be found [here](https://github.com/cosmos/testnets/blob/master/interchain-security/VALIDATOR_JOINING_GUIDE.md#option-two-use-key-delegation).
+#### b. [Required only for Validators] Replace `$HOME/.elys/config/priv_validator_key.json` with your cosmos's provider testnet `priv_validator_key.json` Note: You can also use another priv_validator_key.json The instructions for it can be found [here](https://github.com/cosmos/testnets/blob/master/interchain-security/VALIDATOR_JOINING_GUIDE.md#option-two-use-key-delegation).
 
 #### c. Add persistent peers and seeds in config.toml
 
