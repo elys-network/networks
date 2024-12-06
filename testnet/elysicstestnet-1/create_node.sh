@@ -14,6 +14,8 @@ fi
 CHAINID="elysicstestnet-1"
 MONIKER="$1"
 DENOM="uelys"
+USDC="ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349"
+ATOM="ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
 DBENGINE="pebbledb"
 BLOCKTIME="3s"
 VERSION="v0.54.0"
@@ -76,7 +78,7 @@ sed -i -E "s|timeout_commit = \"5s\"|timeout_commit = \"$BLOCKTIME\"|g" $config_
 sed -i -E "s|seeds = \".*\"|seeds = \"$SEED\"|g" $config_toml
 sed -i -E "s|persistent_peers = \".*\"|persistent_peers = \"$PEERS\"|g" $config_toml
 
-sed -i -E "s|minimum-gas-prices = \".*\"|minimum-gas-prices = \"0.001$DENOM\"|g" $app_toml
+sed -i -E "s|minimum-gas-prices = \".*\"|minimum-gas-prices = \"0.001$DENOM,0.001$USDC,0.001$ATOM\"|g" $app_toml
 sed -i -E '/\[api\]/,/^enable = .*$/ s/^enable = .*$/enable = true/' $app_toml
 sed -i -E 's|swagger = .*|swagger = true|g' $app_toml
 sed -i -E "s|localhost|0.0.0.0|g" $app_toml

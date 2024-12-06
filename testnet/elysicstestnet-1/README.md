@@ -69,8 +69,10 @@ b. **For Validators**: Replace Validator Key
 
 c. Configure Node Settings
 - Add persistent peers and seeds in `config.toml`
-- Set minimum gas prices in `app.toml` (recommended: `0.001uelys`)
-  - USDC IBC token can be used once relayer is configured
+- Set minimum gas prices in `app.toml`:
+```
+minimum-gas-prices = "0.001uelys,0.001ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349,0.001ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
+```
 
 ### 3. Running the Node
 
