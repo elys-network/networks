@@ -91,3 +91,41 @@ sudo systemctl enable elysd
 
 To start: `sudo systemctl start elysd`
 To stop : `sudo systemctl stop elysd`
+
+
+#### IBC Connection Infos:
+```
+# Chain: provider
+- Client: 07-tendermint-186
+    * Connection: connection-141
+        + Channel: channel-289
+        | Port: provider
+        | Counterparty: channel-0
+        + Channel: channel-290
+        | Port: transfer
+        | Counterparty: channel-1
+
+# Chain: elysicstestnet-1
+- Client: 07-tendermint-0
+    * Connection: connection-0
+        + Channel: channel-0
+        | Port: consumer
+        | Counterparty: channel-289
+        + Channel: channel-1
+        | Port: transfer
+        | Counterparty: channel-290
+- Client: 07-tendermint-1
+- Client: 07-tendermint-2
+    * Connection: connection-1
+        + Channel: channel-2
+        | Port: transfer
+        | Counterparty: channel-287
+
+# Chain: grand-1
+- Client: 07-tendermint-361
+- Client: 07-tendermint-362
+    * Connection: connection-331
+        + Channel: channel-287
+        | Port: transfer
+        | Counterparty: channel-2
+```
