@@ -78,7 +78,7 @@ sed -i -E "s|timeout_commit = \"5s\"|timeout_commit = \"$BLOCKTIME\"|g" $config_
 sed -i -E "s|seeds = \".*\"|seeds = \"$SEED\"|g" $config_toml
 sed -i -E "s|persistent_peers = \".*\"|persistent_peers = \"$PEERS\"|g" $config_toml
 
-sed -i -E "s|minimum-gas-prices = \".*\"|minimum-gas-prices = \"0.001$DENOM,0.001$USDC,0.001$ATOM\"|g" $app_toml
+sed -i -E "s|minimum-gas-prices = \".*\"|minimum-gas-prices = \"0.0003$DENOM,0.001$USDC,0.001$ATOM\"|g" $app_toml
 sed -i -E '/\[api\]/,/^enable = .*$/ s/^enable = .*$/enable = true/' $app_toml
 sed -i -E 's|swagger = .*|swagger = true|g' $app_toml
 sed -i -E "s|localhost|0.0.0.0|g" $app_toml
