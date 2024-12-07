@@ -2,40 +2,56 @@
 
 Welcome to the Elys testnet! This guide will help you set up a full node and join the testnet. The producer chain is the Cosmos Hub, and this testnet ensures compatibility and stability for the Interchain Security (ICS) environment.
 
----
+## Quick Reference
 
-## Minimum Hardware Requirements
+- Consumer ID: 113
+- Chain ID: elysicstestnet-1
 
-To run your node effectively, ensure your machine meets the following requirements:
+## Hardware Requirements
 
-- **CPU**: 8 cores
-- **RAM**: 16 GB
-- **Disk**: 200 GB SSD
-- **Network**: High-speed internet connection with at least 100 Mbps bandwidth
-
----
+| Component | Minimum Specification |
+| --------- | --------------------- |
+| CPU       | 8 cores               |
+| RAM       | 16 GB                 |
+| Storage   | 200 GB SSD            |
+| Network   | 100 Mbps+             |
 
 ## Software Requirements
 
-- **Operating System**: Linux (Ubuntu 20.04 or later recommended) or macOS
+- **Operating System**: Ubuntu 20.04+ or macOS
 - **Go**: v1.22.6
 
----
+## Validator Setup Instructions
 
-## Instructions to Join the Testnet
+### 1. Opt-In to Consumer Chain (Validators Only)
 
-#### Opt In [Required only for Validators]
-
-Consumer ID: 113
-Chain ID: elysicstestnet-1
-
+```bash
+gaiad tx provider opt-in 113 \
+    --from [YOUR_KEY] \
+    --chain-id provider \
+    --fees 2000uatom \
+    --node https://rpc.provider-sentry-01.ics-testnet.polypore.xyz:443
 ```
-gaiad tx provider opt-in 113 --from [YOUR_KEY] --chain-id provider --fees 2000uatom --node https://rpc.provider-sentry-01.ics-testnet.polypore.xyz:443
+
+### 2. Node Setup Options
+
+#### Option A: Quick Setup Script
+
+```bash
+wget https://raw.githubusercontent.com/elys-network/networks/main/testnet/elysicstestnet-1/create_node.sh
+chmod +x create_node.sh
+./create_node.sh "your-moniker-name"
 ```
 
-### 1. Clone the Repository
+> **⚠️ Important Note for Validators**:
+>
+> 1. Before running the script, ensure it does not automatically start the node (check and modify the script if needed)
+> 2. After running the script, you must replace the `$HOME/.elys/config/priv_validator_key.json` with your cosmos's provider testnet `priv_validator_key.json` file
+> 3. Only start the node after completing the key replacement to avoid double signing
 
-Download the consumer chain codebase:
+#### Option B: Manual Setup
+
+1. **Clone and Build**
 
 ```bash
 git clone https://github.com/elys-network/elys.git
@@ -45,29 +61,47 @@ make install
 elysd init [your-moniker] --chain-id elysicstestnet-1
 ```
 
-### 2. Starting the node:
+2. **Configure Node**
 
-#### a. Fetch the genesis file
-```
+a. Download Genesis File
+
+```bash
 curl -o $HOME/.elys/config/genesis.json https://raw.githubusercontent.com/elys-network/networks/refs/heads/main/testnet/elysicstestnet-1/genesis.json
 ```
-#### b. [Required only for Validators] Replace `$HOME/.elys/config/priv_validator_key.json` with your cosmos's provider testnet `priv_validator_key.json` Note: You can also use another priv_validator_key.json The instructions for it can be found [here](https://github.com/cosmos/testnets/blob/master/interchain-security/VALIDATOR_JOINING_GUIDE.md#option-two-use-key-delegation).
 
-#### c. Add persistent peers and seeds in config.toml
+b. **For Validators**: Replace Validator Key
 
-#### d. Set the minimum gas prices in the app.toml file. Recommended 0.001uelys
-You can use USDC ibc token as well once the relayer is set up and denom is known
+- Replace `$HOME/.elys/config/priv_validator_key.json` with your cosmos's provider testnet key
+- Alternative key delegation instructions available [here](https://github.com/cosmos/testnets/blob/master/interchain-security/VALIDATOR_JOINING_GUIDE.md#option-two-use-key-delegation)
 
-#### e. Start the node: `elysd start`
+c. Configure Node Settings
 
-#### f. Recommended to use systemctl service to run the node:
+- Add persistent peers and seeds in `config.toml`
+- Set minimum gas prices in `app.toml`:
 
 ```
+minimum-gas-prices = "0.0003uelys,0.001ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349,0.001ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
+```
+
+### 3. Running the Node
+
+#### Option A: Direct Start
+
+```bash
+elysd start
+```
+
+#### Option B: System Service (Recommended)
+
+1. Create Service File
+
+```bash
 sudo nano /etc/systemd/system/elysd.service
 ```
-Paste the following:
 
-```
+2. Add Service Configuration
+
+```ini
 [Unit]
 Description=Elys Network Testnet Node
 After=network.target
@@ -83,17 +117,24 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 ```
 
-After exiting the editor:
-```
+3. Enable and Manage Service
+
+```bash
 sudo systemctl daemon-reload
 sudo systemctl enable elysd
+
+# Start node
+sudo systemctl start elysd
+
+# Stop node
+sudo systemctl stop elysd
+
+# Check logs
+sudo journalctl -u elysd -f -o cat
 ```
 
-To start: `sudo systemctl start elysd`
-To stop : `sudo systemctl stop elysd`
+## IBC Connection Infos:
 
-
-#### IBC Connection Infos:
 ```
 # Chain: provider
 - Client: 07-tendermint-186
