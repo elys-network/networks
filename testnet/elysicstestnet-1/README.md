@@ -120,6 +120,12 @@ To stop : `sudo systemctl stop elysd`
         + Channel: channel-2
         | Port: transfer
         | Counterparty: channel-287
+- Client: 07-tendermint-3
+- Client: 07-tendermint-4
+    * Connection: connection-2
+        + Channel: channel-3
+        | Port: transfer
+        | Counterparty: channel-578
 
 # Chain: grand-1
 - Client: 07-tendermint-361
@@ -128,4 +134,10 @@ To stop : `sudo systemctl stop elysd`
         + Channel: channel-287
         | Port: transfer
         | Counterparty: channel-2
+# Chain: axelar-testnet-lisbon-3
+- Client: 07-tendermint-1064
+    * Connection: connection-826
+    + Channel: Channel: channel-578
+    | Port: transfer
+    | Counterparty: channel-3
 ```
