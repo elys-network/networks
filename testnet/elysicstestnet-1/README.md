@@ -175,6 +175,7 @@ sudo journalctl -u elysd -f -o cat
         + Channel: channel-287
         | Port: transfer
         | Counterparty: channel-2
+
 # Chain: axelar-testnet-lisbon-3
 - Client: 07-tendermint-1064
     * Connection: connection-826
