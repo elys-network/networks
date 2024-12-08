@@ -85,7 +85,7 @@ sed -i -E "s|localhost|0.0.0.0|g" $app_toml
 sed -i -E 's|unsafe-cors = .*|unsafe-cors = true|g' $app_toml
 sed -i -E "s|app-db-backend = \".*\"|app-db-backend = \"$DBENGINE\"|g" $app_toml
 
-sed -i -E "s|chain-id = \"\"|chain-id = \"$CHAINID\"|g" $client_toml
+sed -i -E "s|chain-id = \".*\"|chain-id = \"$CHAINID\"|g" $client_toml
 sed -i -E "s|keyring-backend = \"os\"|keyring-backend = \"test\"|g" $client_toml
 
 curl https://raw.githubusercontent.com/elys-network/networks/refs/heads/main/testnet/$CHAINID/genesis.json -o $genesis_json
