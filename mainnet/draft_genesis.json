@@ -16,9 +16,11 @@
         "weight_breaking_fee_multiplier": "0.000500000000000000",
         "weight_breaking_fee_portion": "0.500000000000000000",
         "weight_recovery_fee_portion": "0.100000000000000000",
-        "threshold_weight_difference": "0.300000000000000000",
+        "threshold_weight_difference": "0.050000000000000000",
         "allowed_pool_creators": [
-          "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3"
+          "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "elys130yaavkws04nt9lslqc5lgyj3jpu8t20x63pcj",
+          "elys1ea82awvsaq62ytqf4qay3muqlessx5esezhpju"
         ]
       },
       "pool_list": [],
@@ -27,7 +29,45 @@
     },
     "assetprofile": {
       "params": {},
-      "entry_list": []
+      "entry_list": [
+        {
+          "base_denom": "uusdc",
+          "decimals": "6",
+          "denom": "uusdc",
+          "display_name": "USDC",
+          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "commit_enabled": true,
+          "withdraw_enabled": true
+        },
+        {
+          "base_denom": "uelys",
+          "decimals": "6",
+          "denom": "uelys",
+          "display_name": "ELYS",
+          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "commit_enabled": true,
+          "withdraw_enabled": true
+        },
+        {
+          "base_denom": "ueden",
+          "decimals": "6",
+          "denom": "ueden",
+          "display_name": "EDEN",
+          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "commit_enabled": true,
+          "withdraw_enabled": true
+        },
+        {
+          "base_denom": "uedenb",
+          "decimals": "6",
+          "denom": "uedenb",
+          "display_name": "Eden Boost",
+          "display_symbol": "EDENB",
+          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "commit_enabled": true,
+          "withdraw_enabled": true
+        }
+      ]
     },
     "auth": {
       "params": {
@@ -54,7 +94,7 @@
     },
     "burner": {
       "params": {
-        "epoch_identifier": "epoch_identifier"
+        "epoch_identifier": "tenseconds"
       },
       "history_list": []
     },
@@ -92,7 +132,7 @@
           {
             "base_denom": "ueden",
             "vesting_denom": "uelys",
-            "num_blocks": "1576800",
+            "num_blocks": "1555200",
             "vest_now_factor": "90",
             "num_max_vestings": "10000"
           }
@@ -118,7 +158,7 @@
     "consensus": null,
     "crisis": {
       "constant_fee": {
-        "denom": "stake",
+        "denom": "uelys",
         "amount": "1000"
       }
     },
@@ -169,6 +209,87 @@
           "current_epoch_start_time": "0001-01-01T00:00:00Z",
           "epoch_counting_started": false,
           "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "day",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "86400s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "fourhours",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "14400s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "halfhour",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "1800s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "hour",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "3600s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "sixhours",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "21600s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "tenseconds",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "10s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "twelvehours",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "43200s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "twohours",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "7200s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "week",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "604800s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
         }
       ]
     },
@@ -211,24 +332,24 @@
       "params": {
         "min_deposit": [
           {
-            "denom": "stake",
-            "amount": "10000000"
+            "denom": "uelys",
+            "amount": "100000000"
           }
         ],
-        "max_deposit_period": "172800s",
-        "voting_period": "172800s",
+        "max_deposit_period": "1209600s",
+        "voting_period": "432000s",
         "quorum": "0.334000000000000000",
         "threshold": "0.500000000000000000",
         "veto_threshold": "0.334000000000000000",
-        "min_initial_deposit_ratio": "0.000000000000000000",
+        "min_initial_deposit_ratio": "0.100000000000000000",
         "proposal_cancel_ratio": "0.500000000000000000",
         "proposal_cancel_dest": "",
-        "expedited_voting_period": "86400s",
+        "expedited_voting_period": "1800s",
         "expedited_threshold": "0.667000000000000000",
         "expedited_min_deposit": [
           {
-            "denom": "stake",
-            "amount": "50000000"
+            "denom": "uelys",
+            "amount": "500000000"
           }
         ],
         "burn_vote_quorum": false,
@@ -255,7 +376,8 @@
         "clients_metadata": [],
         "params": {
           "allowed_clients": [
-            "*"
+            "06-solomachine",
+            "07-tendermint"
           ]
         },
         "create_localhost": false,
@@ -313,13 +435,13 @@
     "leveragelp": {
       "params": {
         "leverage_max": "10.000000000000000000",
-        "max_open_positions": "9999",
+        "max_open_positions": "9999999999999",
         "pool_open_threshold": "0.200000000000000000",
         "safety_factor": "1.100000000000000000",
         "whitelisting_enabled": false,
-        "epoch_length": "1",
-        "fallback_enabled": true,
-        "number_per_block": "1000"
+        "epoch_length": "9999999999999",
+        "fallback_enabled": false,
+        "number_per_block": "100"
       },
       "pool_list": [],
       "position_list": [],
@@ -332,7 +454,7 @@
         "reward_portion_for_stakers": "0.250000000000000000",
         "max_eden_reward_apr_lps": "0.500000000000000000",
         "supported_reward_denoms": [],
-        "protocol_revenue_address": "elys1tush6sj4lsr7enq3j0c9uassdvfvc545rh2qt8"
+        "protocol_revenue_address": "NEED THIS ADRESS"
       },
       "external_incentives": [],
       "external_incentive_index": "0",
@@ -364,18 +486,25 @@
       "port_id": "oracle",
       "asset_infos": [
         {
-          "denom": "satoshi",
-          "display": "BTC",
-          "band_ticker": "BTC",
-          "elys_ticker": "BTC",
-          "decimal": "0"
+          "denom": "uelys",
+          "display": "ELYS",
+          "band_ticker": "ELYS",
+          "elys_ticker": "ELYS",
+          "decimal": "6"
         },
         {
-          "denom": "wei",
-          "display": "ETH",
-          "band_ticker": "ETH",
-          "elys_ticker": "ETH",
-          "decimal": "0"
+          "denom": "ueden",
+          "display": "EDEN",
+          "band_ticker": "EDEN",
+          "elys_ticker": "EDEN",
+          "decimal": "6"
+        },
+        {
+          "denom": "uedenb",
+          "display": "EDENB",
+          "band_ticker": "EDENB",
+          "elys_ticker": "EDENB",
+          "decimal": "6"
         }
       ],
       "prices": [],
@@ -383,13 +512,21 @@
         {
           "feeder": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
           "is_active": true
+        },
+        {
+          "feeder": "elys16qgewtplahkqwqa0aqv4pxnxa58ulu48k6crhj",
+          "is_active": true
+        },
+        {
+          "feeder": "elys1zwexzk6ns5ermvag5fc0gtyvrnxyaz9kzaflqf",
+          "is_active": true
         }
       ]
     },
     "parameter": {
       "params": {
         "min_commission_rate": "0.050000000000000000",
-        "max_voting_power": "100.000000000000000000",
+        "max_voting_power": "0.66",
         "min_self_delegation": "1",
         "total_blocks_per_year": "6307200",
         "rewards_data_lifetime": "86400"
@@ -429,8 +566,8 @@
     },
     "slashing": {
       "params": {
-        "signed_blocks_window": "100",
-        "min_signed_per_window": "0.500000000000000000",
+        "signed_blocks_window": "30000",
+        "min_signed_per_window": "0.050000000000000000",
         "downtime_jail_duration": "600s",
         "slash_fraction_double_sign": "0.050000000000000000",
         "slash_fraction_downtime": "0.010000000000000000"
@@ -457,12 +594,12 @@
     },
     "staking": {
       "params": {
-        "unbonding_time": "1814400s",
+        "unbonding_time": "1209600s",
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
-        "bond_denom": "stake",
-        "min_commission_rate": "0.000000000000000000"
+        "bond_denom": "uelys",
+        "min_commission_rate": "0.050000000000000000"
       },
       "last_total_power": "0",
       "last_validator_powers": [],
@@ -521,13 +658,13 @@
   "consensus": {
     "params": {
       "block": {
-        "max_bytes": "22020096",
-        "max_gas": "-1"
+        "max_bytes": "5242880",
+        "max_gas": "75000000"
       },
       "evidence": {
-        "max_age_num_blocks": "100000",
+        "max_age_num_blocks": "20000",
         "max_age_duration": "172800000000000",
-        "max_bytes": "1048576"
+        "max_bytes": "100000"
       },
       "validator": {
         "pub_key_types": [
