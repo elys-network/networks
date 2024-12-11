@@ -1,7 +1,7 @@
 {
   "app_name": "elys",
   "app_version": "v1.0.0",
-  "genesis_time": "TBA",
+  "genesis_time": "2024-12-11T15:00:00.000000Z",
   "chain_id": "elys-1",
   "initial_height": 1,
   "app_hash": null,
@@ -454,7 +454,7 @@
         "reward_portion_for_stakers": "0.250000000000000000",
         "max_eden_reward_apr_lps": "0.500000000000000000",
         "supported_reward_denoms": [],
-        "protocol_revenue_address": "NEED THIS ADRESS"
+        "protocol_revenue_address": "elys1uqznyaahdmp3ay8zex5cwf729ggdhc45dtys4f"
       },
       "external_incentives": [],
       "external_incentive_index": "0",
