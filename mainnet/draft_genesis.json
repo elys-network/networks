@@ -1,1516 +1,1515 @@
 {
-    "app_name": "elys",
-    "app_version": "v1.0.0",
-    "genesis_time": "2024-12-11T15:00:00.000000Z",
-    "chain_id": "elys-1",
-    "initial_height": 1,
-    "app_hash": null,
-    "app_state": {
-      "07-tendermint": null,
-      "amm": {
-        "params": {
-          "pool_creation_fee": "10000000",
-          "slippage_track_duration": "604800",
-          "base_assets": [],
-          "weight_breaking_fee_exponent": "2.500000000000000000",
-          "weight_breaking_fee_multiplier": "0.000500000000000000",
-          "weight_breaking_fee_portion": "0.500000000000000000",
-          "weight_recovery_fee_portion": "0.100000000000000000",
-          "threshold_weight_difference": "0.050000000000000000",
-          "allowed_pool_creators": [
-            "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
-            "elys130yaavkws04nt9lslqc5lgyj3jpu8t20x63pcj",
-            "elys1ea82awvsaq62ytqf4qay3muqlessx5esezhpju"
-          ]
-        },
-        "pool_list": [],
-        "denom_liquidity_list": [],
-        "slippage_tracks": []
-      },
-      "assetprofile": {
-        "params": {},
-        "entry_list": [
-          {
-            "base_denom": "uusdc",
-            "decimals": "6",
-            "denom": "uusdc",
-            "display_name": "USDC",
-            "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
-            "commit_enabled": true,
-            "withdraw_enabled": true
-          },
-          {
-            "base_denom": "uelys",
-            "decimals": "6",
-            "denom": "uelys",
-            "display_name": "ELYS",
-            "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
-            "commit_enabled": true,
-            "withdraw_enabled": true
-          },
-          {
-            "base_denom": "ueden",
-            "decimals": "6",
-            "denom": "ueden",
-            "display_name": "EDEN",
-            "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
-            "commit_enabled": true,
-            "withdraw_enabled": true
-          },
-          {
-            "base_denom": "uedenb",
-            "decimals": "6",
-            "denom": "uedenb",
-            "display_name": "Eden Boost",
-            "display_symbol": "EDENB",
-            "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
-            "commit_enabled": true,
-            "withdraw_enabled": true
-          }
+  "app_name": "elys",
+  "app_version": "v1.0.0",
+  "genesis_time": "2024-12-11T15:00:00.000000Z",
+  "chain_id": "elys-1",
+  "initial_height": 1,
+  "app_hash": null,
+  "app_state": {
+    "07-tendermint": null,
+    "amm": {
+      "params": {
+        "pool_creation_fee": "10000000",
+        "slippage_track_duration": "604800",
+        "base_assets": [],
+        "weight_breaking_fee_exponent": "2.500000000000000000",
+        "weight_breaking_fee_multiplier": "0.000500000000000000",
+        "weight_breaking_fee_portion": "0.500000000000000000",
+        "weight_recovery_fee_portion": "0.100000000000000000",
+        "threshold_weight_difference": "0.050000000000000000",
+        "allowed_pool_creators": [
+          "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "elys130yaavkws04nt9lslqc5lgyj3jpu8t20x63pcj",
+          "elys1ea82awvsaq62ytqf4qay3muqlessx5esezhpju"
         ]
       },
-      "auth": {
-        "params": {
-          "max_memo_characters": "256",
-          "tx_sig_limit": "7",
-          "tx_size_cost_per_byte": "10",
-          "sig_verify_cost_ed25519": "590",
-          "sig_verify_cost_secp256k1": "1000"
+      "pool_list": [],
+      "denom_liquidity_list": [],
+      "slippage_tracks": []
+    },
+    "assetprofile": {
+      "params": {},
+      "entry_list": [
+        {
+          "base_denom": "uusdc",
+          "decimals": "6",
+          "denom": "uusdc",
+          "display_name": "USDC",
+          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "commit_enabled": true,
+          "withdraw_enabled": true
         },
-        "accounts": [
-          {
-            "@type": "/cosmos.auth.v1beta1.BaseAccount",
-            "address": "elys13647xwfw6swdkexzn90xjym4erk3qwh3vq9y4k",
-            "pub_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1yuae8fwjrd5f8zemryun5qglryst9e6tul8qqv",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "1451801220000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1467n8thlt50q9cgud37680673f57e47q9u8hzz",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "1451800305000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1nhe3tnly5yhyykahujcdm4egzhcstypah0cggu",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "610000305000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1we50lf9sw27w6d33z5mukygdcldyganh8w29kh",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "408700305000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1zz7y3wzmxm8ga76n29v278pkvhgvynwt7dysc6",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "366000000000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys174tvh2dty7vsvwn2cfsmkwq8tplqgr5fj77dds",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "152500305000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1q2cj4dhmhy49p03sdxmpzvdrwf8xkczyp3wvfu",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "121999695000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys160w4jskm5ra8qdhh8w5defx3yzxtlgm53y8rgu",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "121999695000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys136ekw6430ff8ru3jesfjltt8qr4s7j48fklgfz",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "121999695000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys140ycsxcstxkyfnfjlzya8ncz65u8cschzp33l6",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "121999695000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1n6q3dzwngvzfsf2q4qzhx7segsevafx7v5hk5a",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "121999695000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys17hyxyu0d5j3e8ghlx89afwzwavyxl0sccmua24",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "121999695000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1vgzp85p0lpmy4em9hrcxkcvvsa68hua9455gmd",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "121999695000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1k4jgnwr4pvkp4ug7su2ha9hf2qnqenuztrljug",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "61000305000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys123scuwjkz9v778sruaymudvvsfgv0a8wdepk74",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "61000305000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1x4fp5gvlh40zwjv50mut0x92kqqv9tr2n4punc",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "24400305000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1dqt34yf9cs7dc90s03zp4je9txxuzdnvlharkf",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "12199695000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1mwc94les54km8fwsc5629ja8maum8vpud2sdlg",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "12199695000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1dkrjn60jgyfnn5utjl5huzuxv5waf64lk9yzv4",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "12199695000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys12hwxy384npez4qp2d434ml9e0elfrhcpsmvkx7",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "12199695000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1780565400"
-            },
-            "start_time": "1749461400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1gt22m4cyqxd8pwzpmuhyjkldh75l7hxswca7r3",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "178010000000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1775381400"
-            },
-            "start_time": "1744277400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1twegecwkgjy0ghgmvl5qwq7ntwnghmv8hqrngp",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "124999875000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1775381400"
-            },
-            "start_time": "1744277400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys19mk5ka3hhad3fuedm4637d68n2jrvj6gd3g5tj",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "124999875000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1775381400"
-            },
-            "start_time": "1744277400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1q8teur40emyun60et4wh5z6yj5669stgkjv74v",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "124999875000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1775381400"
-            },
-            "start_time": "1744277400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys10jcxtfdghw53z24kt3ys7fdgpwhqhk3qnl63vm",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "31249750000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1775381400"
-            },
-            "start_time": "1744277400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1w8zcz8u6f64xrkvl5c3xcjxslzfa7mn6ru44n9",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "25000500000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1775381400"
-            },
-            "start_time": "1744277400"
-          },
-          {
-            "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
-            "base_vesting_account": {
-              "base_account": {
-                "address": "elys1zxgwtsut7xn90ulzhtfljsms94y8sy2k05qn34",
-                "pub_key": null,
-                "account_number": "0",
-                "sequence": "0"
-              },
-              "original_vesting": [
-                {
-                  "denom": "uelys",
-                  "amount": "5515740125000"
-                }
-              ],
-              "delegated_free": [],
-              "delegated_vesting": [],
-              "end_time": "1775381400"
-            },
-            "start_time": "1744277400"
-          }
-        ]
-      },
-      "authz": {
-        "authorization": []
-      },
-      "bank": {
-        "params": {
-          "send_enabled": [],
-          "default_send_enabled": true
+        {
+          "base_denom": "uelys",
+          "decimals": "6",
+          "denom": "uelys",
+          "display_name": "ELYS",
+          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "commit_enabled": true,
+          "withdraw_enabled": true
         },
-        "balances": [
-          {
-            "address": "elys1yuae8fwjrd5f8zemryun5qglryst9e6tul8qqv",
-            "coins": [
+        {
+          "base_denom": "ueden",
+          "decimals": "6",
+          "denom": "ueden",
+          "display_name": "EDEN",
+          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "commit_enabled": true,
+          "withdraw_enabled": true
+        },
+        {
+          "base_denom": "uedenb",
+          "decimals": "6",
+          "denom": "uedenb",
+          "display_name": "Eden Boost",
+          "display_symbol": "EDENB",
+          "authority": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "commit_enabled": true,
+          "withdraw_enabled": true
+        }
+      ]
+    },
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "elys13647xwfw6swdkexzn90xjym4erk3qwh3vq9y4k",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1yuae8fwjrd5f8zemryun5qglryst9e6tul8qqv",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "1451801220000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys13647xwfw6swdkexzn90xjym4erk3qwh3vq9y4k",
-            "coins": [
-              {
-                "denom": "uelys",
-                "amount": "510000000000"
-              }
-            ]
-          },
-          {
-            "address": "elys1467n8thlt50q9cgud37680673f57e47q9u8hzz",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1467n8thlt50q9cgud37680673f57e47q9u8hzz",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "1451800305000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys1nhe3tnly5yhyykahujcdm4egzhcstypah0cggu",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1nhe3tnly5yhyykahujcdm4egzhcstypah0cggu",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "610000305000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys1we50lf9sw27w6d33z5mukygdcldyganh8w29kh",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1we50lf9sw27w6d33z5mukygdcldyganh8w29kh",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "408700305000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys1zz7y3wzmxm8ga76n29v278pkvhgvynwt7dysc6",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1zz7y3wzmxm8ga76n29v278pkvhgvynwt7dysc6",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "366000000000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys174tvh2dty7vsvwn2cfsmkwq8tplqgr5fj77dds",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys174tvh2dty7vsvwn2cfsmkwq8tplqgr5fj77dds",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "152500305000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys1q2cj4dhmhy49p03sdxmpzvdrwf8xkczyp3wvfu",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1q2cj4dhmhy49p03sdxmpzvdrwf8xkczyp3wvfu",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "121999695000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys160w4jskm5ra8qdhh8w5defx3yzxtlgm53y8rgu",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys160w4jskm5ra8qdhh8w5defx3yzxtlgm53y8rgu",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "121999695000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys136ekw6430ff8ru3jesfjltt8qr4s7j48fklgfz",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys136ekw6430ff8ru3jesfjltt8qr4s7j48fklgfz",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "121999695000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys140ycsxcstxkyfnfjlzya8ncz65u8cschzp33l6",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys140ycsxcstxkyfnfjlzya8ncz65u8cschzp33l6",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "121999695000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys1n6q3dzwngvzfsf2q4qzhx7segsevafx7v5hk5a",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1n6q3dzwngvzfsf2q4qzhx7segsevafx7v5hk5a",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "121999695000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys17hyxyu0d5j3e8ghlx89afwzwavyxl0sccmua24",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys17hyxyu0d5j3e8ghlx89afwzwavyxl0sccmua24",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "121999695000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys1vgzp85p0lpmy4em9hrcxkcvvsa68hua9455gmd",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1vgzp85p0lpmy4em9hrcxkcvvsa68hua9455gmd",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "121999695000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys1k4jgnwr4pvkp4ug7su2ha9hf2qnqenuztrljug",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1k4jgnwr4pvkp4ug7su2ha9hf2qnqenuztrljug",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "61000305000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys123scuwjkz9v778sruaymudvvsfgv0a8wdepk74",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys123scuwjkz9v778sruaymudvvsfgv0a8wdepk74",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "61000305000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys1x4fp5gvlh40zwjv50mut0x92kqqv9tr2n4punc",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1x4fp5gvlh40zwjv50mut0x92kqqv9tr2n4punc",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "24400305000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys1dqt34yf9cs7dc90s03zp4je9txxuzdnvlharkf",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1dqt34yf9cs7dc90s03zp4je9txxuzdnvlharkf",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "12199695000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys1mwc94les54km8fwsc5629ja8maum8vpud2sdlg",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1mwc94les54km8fwsc5629ja8maum8vpud2sdlg",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "12199695000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys1dkrjn60jgyfnn5utjl5huzuxv5waf64lk9yzv4",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1dkrjn60jgyfnn5utjl5huzuxv5waf64lk9yzv4",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "12199695000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys12hwxy384npez4qp2d434ml9e0elfrhcpsmvkx7",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys12hwxy384npez4qp2d434ml9e0elfrhcpsmvkx7",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "12199695000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1780565400"
           },
-          {
-            "address": "elys1gt22m4cyqxd8pwzpmuhyjkldh75l7hxswca7r3",
-            "coins": [
+          "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1gt22m4cyqxd8pwzpmuhyjkldh75l7hxswca7r3",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "178010000000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1775381400"
           },
-          {
-            "address": "elys1zxgwtsut7xn90ulzhtfljsms94y8sy2k05qn34",
-            "coins": [
-              {
-                "denom": "uelys",
-                "amount": "6390740125000"
-              }
-            ]
-          },
-          {
-            "address": "elys1twegecwkgjy0ghgmvl5qwq7ntwnghmv8hqrngp",
-            "coins": [
-              {
-                "denom": "uelys",
-                "amount": "124999875000"
-              }
-            ]
-          },
-          {
-            "address": "elys19mk5ka3hhad3fuedm4637d68n2jrvj6gd3g5tj",
-            "coins": [
+          "start_time": "1744277400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1twegecwkgjy0ghgmvl5qwq7ntwnghmv8hqrngp",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "124999875000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1775381400"
           },
-          {
-            "address": "elys1q8teur40emyun60et4wh5z6yj5669stgkjv74v",
-            "coins": [
+          "start_time": "1744277400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys19mk5ka3hhad3fuedm4637d68n2jrvj6gd3g5tj",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "124999875000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1775381400"
           },
-          {
-            "address": "elys10jcxtfdghw53z24kt3ys7fdgpwhqhk3qnl63vm",
-            "coins": [
+          "start_time": "1744277400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1q8teur40emyun60et4wh5z6yj5669stgkjv74v",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "uelys",
+                "amount": "124999875000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1775381400"
+          },
+          "start_time": "1744277400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys10jcxtfdghw53z24kt3ys7fdgpwhqhk3qnl63vm",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "31249750000"
               }
-            ]
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1775381400"
           },
-          {
-            "address": "elys1w8zcz8u6f64xrkvl5c3xcjxslzfa7mn6ru44n9",
-            "coins": [
+          "start_time": "1744277400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1w8zcz8u6f64xrkvl5c3xcjxslzfa7mn6ru44n9",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
               {
                 "denom": "uelys",
                 "amount": "25000500000"
               }
-            ]
-          }
-        ],
-        "supply": [
-          {
-            "denom": "uelys",
-            "amount": "13000000000000"
-          }
-        ],
-        "denom_metadata": [],
-        "send_enabled": []
-      },
-      "burner": {
-        "params": {
-          "epoch_identifier": "tenseconds"
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1775381400"
+          },
+          "start_time": "1744277400"
         },
-        "history_list": []
-      },
-      "capability": {
-        "index": "1",
-        "owners": []
-      },
-      "ccvconsumer": {
-        "params": {
-          "enabled": false,
-          "blocks_per_distribution_transmission": "1000",
-          "distribution_transmission_channel": "",
-          "provider_fee_pool_addr_str": "",
-          "ccv_timeout_period": "2419200s",
-          "transfer_timeout_period": "3600s",
-          "consumer_redistribution_fraction": "0.75",
-          "historical_entries": "10000",
-          "unbonding_period": "1728000s",
-          "soft_opt_out_threshold": "0",
-          "reward_denoms": [],
-          "provider_reward_denoms": [],
-          "retry_delay_period": "3600s",
-          "consumer_id": "0"
-        },
-        "provider": {
-          "client_state": null,
-          "consensus_state": null,
-          "initial_val_set": []
-        },
-        "new_chain": false
-      },
-      "commitment": {
-        "params": {
-          "vesting_infos": [
-            {
-              "base_denom": "ueden",
-              "vesting_denom": "uelys",
-              "num_blocks": "1555200",
-              "vest_now_factor": "90",
-              "num_max_vestings": "10000"
-            }
-          ],
-          "total_committed": [],
-          "number_of_commitments": "0",
-          "enable_vest_now": false,
-          "start_atom_stakers_height": "0",
-          "end_atom_stakers_height": "0",
-          "start_cadets_height": "0",
-          "end_cadets_height": "0",
-          "start_nft_holders_height": "0",
-          "end_nft_holders_height": "0",
-          "start_governors_height": "0",
-          "end_governors_height": "0"
-        },
-        "commitments": [],
-        "atom_stakers": [],
-        "nft_holders": [],
-        "cadets": [],
-        "governors": []
-      },
-      "consensus": null,
-      "crisis": {
-        "constant_fee": {
-          "denom": "uelys",
-          "amount": "1000"
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1zxgwtsut7xn90ulzhtfljsms94y8sy2k05qn34",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "uelys",
+                "amount": "5515740125000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1775381400"
+          },
+          "start_time": "1744277400"
         }
-      },
-      "distribution": {
-        "params": {
-          "community_tax": "0.020000000000000000",
-          "base_proposer_reward": "0.000000000000000000",
-          "bonus_proposer_reward": "0.000000000000000000",
-          "withdraw_addr_enabled": true
-        },
-        "fee_pool": {
-          "community_pool": []
-        },
-        "delegator_withdraw_infos": [],
-        "previous_proposer": "",
-        "outstanding_rewards": [],
-        "validator_accumulated_commissions": [],
-        "validator_historical_rewards": [],
-        "validator_current_rewards": [],
-        "delegator_starting_infos": [],
-        "validator_slash_events": []
-      },
-      "epochs": {
-        "epochs": [
-          {
-            "identifier": "band_epoch",
-            "start_time": "0001-01-01T00:00:00Z",
-            "duration": "15s",
-            "current_epoch": "0",
-            "current_epoch_start_time": "0001-01-01T00:00:00Z",
-            "epoch_counting_started": false,
-            "current_epoch_start_height": "0"
-          },
-          {
-            "identifier": "ten_days",
-            "start_time": "0001-01-01T00:00:00Z",
-            "duration": "864000s",
-            "current_epoch": "0",
-            "current_epoch_start_time": "0001-01-01T00:00:00Z",
-            "epoch_counting_started": false,
-            "current_epoch_start_height": "0"
-          },
-          {
-            "identifier": "five_minutes",
-            "start_time": "0001-01-01T00:00:00Z",
-            "duration": "300s",
-            "current_epoch": "0",
-            "current_epoch_start_time": "0001-01-01T00:00:00Z",
-            "epoch_counting_started": false,
-            "current_epoch_start_height": "0"
-          },
-          {
-            "identifier": "day",
-            "start_time": "0001-01-01T00:00:00Z",
-            "duration": "86400s",
-            "current_epoch": "0",
-            "current_epoch_start_time": "0001-01-01T00:00:00Z",
-            "epoch_counting_started": false,
-            "current_epoch_start_height": "0"
-          },
-          {
-            "identifier": "fourhours",
-            "start_time": "0001-01-01T00:00:00Z",
-            "duration": "14400s",
-            "current_epoch": "0",
-            "current_epoch_start_time": "0001-01-01T00:00:00Z",
-            "epoch_counting_started": false,
-            "current_epoch_start_height": "0"
-          },
-          {
-            "identifier": "halfhour",
-            "start_time": "0001-01-01T00:00:00Z",
-            "duration": "1800s",
-            "current_epoch": "0",
-            "current_epoch_start_time": "0001-01-01T00:00:00Z",
-            "epoch_counting_started": false,
-            "current_epoch_start_height": "0"
-          },
-          {
-            "identifier": "hour",
-            "start_time": "0001-01-01T00:00:00Z",
-            "duration": "3600s",
-            "current_epoch": "0",
-            "current_epoch_start_time": "0001-01-01T00:00:00Z",
-            "epoch_counting_started": false,
-            "current_epoch_start_height": "0"
-          },
-          {
-            "identifier": "sixhours",
-            "start_time": "0001-01-01T00:00:00Z",
-            "duration": "21600s",
-            "current_epoch": "0",
-            "current_epoch_start_time": "0001-01-01T00:00:00Z",
-            "epoch_counting_started": false,
-            "current_epoch_start_height": "0"
-          },
-          {
-            "identifier": "tenseconds",
-            "start_time": "0001-01-01T00:00:00Z",
-            "duration": "10s",
-            "current_epoch": "0",
-            "current_epoch_start_time": "0001-01-01T00:00:00Z",
-            "epoch_counting_started": false,
-            "current_epoch_start_height": "0"
-          },
-          {
-            "identifier": "twelvehours",
-            "start_time": "0001-01-01T00:00:00Z",
-            "duration": "43200s",
-            "current_epoch": "0",
-            "current_epoch_start_time": "0001-01-01T00:00:00Z",
-            "epoch_counting_started": false,
-            "current_epoch_start_height": "0"
-          },
-          {
-            "identifier": "twohours",
-            "start_time": "0001-01-01T00:00:00Z",
-            "duration": "7200s",
-            "current_epoch": "0",
-            "current_epoch_start_time": "0001-01-01T00:00:00Z",
-            "epoch_counting_started": false,
-            "current_epoch_start_height": "0"
-          },
-          {
-            "identifier": "week",
-            "start_time": "0001-01-01T00:00:00Z",
-            "duration": "604800s",
-            "current_epoch": "0",
-            "current_epoch_start_time": "0001-01-01T00:00:00Z",
-            "epoch_counting_started": false,
-            "current_epoch_start_height": "0"
-          }
-        ]
-      },
-      "estaking": {
-        "params": {
-          "stake_incentives": null,
-          "eden_commit_val": "",
-          "edenb_commit_val": "",
-          "max_eden_reward_apr_stakers": "0.300000000000000000",
-          "eden_boost_apr": "1.000000000000000000",
-          "provider_vesting_epoch_identifier": "ten_days",
-          "provider_staking_rewards_portion": "0.250000000000000000"
-        },
-        "staking_snapshots": []
-      },
-      "evidence": {
-        "evidence": []
-      },
-      "feegrant": {
-        "allowances": []
-      },
-      "feeibc": {
-        "identified_fees": [],
-        "fee_enabled_channels": [],
-        "registered_payees": [],
-        "registered_counterparty_payees": [],
-        "forward_relayers": []
-      },
-      "genutil": {
-        "gen_txs": []
-      },
-      "gov": {
-        "starting_proposal_id": "1",
-        "deposits": [],
-        "votes": [],
-        "proposals": [],
-        "deposit_params": null,
-        "voting_params": null,
-        "tally_params": null,
-        "params": {
-          "min_deposit": [
-            {
-              "denom": "uelys",
-              "amount": "100000000"
-            }
-          ],
-          "max_deposit_period": "1209600s",
-          "voting_period": "432000s",
-          "quorum": "0.334000000000000000",
-          "threshold": "0.500000000000000000",
-          "veto_threshold": "0.334000000000000000",
-          "min_initial_deposit_ratio": "0.100000000000000000",
-          "proposal_cancel_ratio": "0.500000000000000000",
-          "proposal_cancel_dest": "",
-          "expedited_voting_period": "1800s",
-          "expedited_threshold": "0.667000000000000000",
-          "expedited_min_deposit": [
-            {
-              "denom": "uelys",
-              "amount": "500000000"
-            }
-          ],
-          "burn_vote_quorum": false,
-          "burn_proposal_deposit_prevote": false,
-          "burn_vote_veto": true,
-          "min_deposit_ratio": "0.010000000000000000"
-        },
-        "constitution": ""
-      },
-      "group": {
-        "group_seq": "0",
-        "groups": [],
-        "group_members": [],
-        "group_policy_seq": "0",
-        "group_policies": [],
-        "proposal_seq": "0",
-        "proposals": [],
-        "votes": []
-      },
-      "ibc": {
-        "client_genesis": {
-          "clients": [],
-          "clients_consensus": [],
-          "clients_metadata": [],
-          "params": {
-            "allowed_clients": [
-              "06-solomachine",
-              "07-tendermint"
-            ]
-          },
-          "create_localhost": false,
-          "next_client_sequence": "0"
-        },
-        "connection_genesis": {
-          "connections": [],
-          "client_connection_paths": [],
-          "next_connection_sequence": "0",
-          "params": {
-            "max_expected_time_per_block": "30000000000"
-          }
-        },
-        "channel_genesis": {
-          "channels": [],
-          "acknowledgements": [],
-          "commitments": [],
-          "receipts": [],
-          "send_sequences": [],
-          "recv_sequences": [],
-          "ack_sequences": [],
-          "next_channel_sequence": "0",
-          "params": {
-            "upgrade_timeout": {
-              "height": {
-                "revision_number": "0",
-                "revision_height": "0"
-              },
-              "timestamp": "600000000000"
-            }
-          }
-        }
-      },
-      "interchainaccounts": {
-        "controller_genesis_state": {
-          "active_channels": [],
-          "interchain_accounts": [],
-          "ports": [],
-          "params": {
-            "controller_enabled": true
-          }
-        },
-        "host_genesis_state": {
-          "active_channels": [],
-          "interchain_accounts": [],
-          "port": "icahost",
-          "params": {
-            "host_enabled": true,
-            "allow_messages": [
-              "*"
-            ]
-          }
-        }
-      },
-      "leveragelp": {
-        "params": {
-          "leverage_max": "10.000000000000000000",
-          "max_open_positions": "9999999999999",
-          "pool_open_threshold": "0.200000000000000000",
-          "safety_factor": "1.100000000000000000",
-          "whitelisting_enabled": false,
-          "epoch_length": "9999999999999",
-          "fallback_enabled": false,
-          "number_per_block": "100"
-        },
-        "pool_list": [],
-        "position_list": [],
-        "address_whitelist": []
-      },
-      "masterchef": {
-        "params": {
-          "lp_incentives": null,
-          "reward_portion_for_lps": "0.600000000000000000",
-          "reward_portion_for_stakers": "0.250000000000000000",
-          "max_eden_reward_apr_lps": "0.500000000000000000",
-          "supported_reward_denoms": [],
-          "protocol_revenue_address": "elys1uqznyaahdmp3ay8zex5cwf729ggdhc45dtys4f"
-        },
-        "external_incentives": [],
-        "external_incentive_index": "0",
-        "pool_infos": [],
-        "pool_reward_infos": [],
-        "user_reward_infos": [],
-        "pool_rewards_accum": []
-      },
-      "oracle": {
-        "params": {
-          "band_channel_source": "channel-1",
-          "oracle_script_id": "37",
-          "multiplier": "18",
-          "ask_count": "4",
-          "min_count": "3",
-          "fee_limit": [
-            {
-              "denom": "uband",
-              "amount": "30"
-            }
-          ],
-          "prepare_gas": "600000",
-          "execute_gas": "600000",
-          "client_id": "band_price_id",
-          "band_epoch": "band_epoch",
-          "price_expiry_time": "86400",
-          "life_time_in_blocks": "1"
-        },
-        "port_id": "oracle",
-        "asset_infos": [
-          {
-            "denom": "uelys",
-            "display": "ELYS",
-            "band_ticker": "ELYS",
-            "elys_ticker": "ELYS",
-            "decimal": "6"
-          },
-          {
-            "denom": "ueden",
-            "display": "EDEN",
-            "band_ticker": "EDEN",
-            "elys_ticker": "EDEN",
-            "decimal": "6"
-          },
-          {
-            "denom": "uedenb",
-            "display": "EDENB",
-            "band_ticker": "EDENB",
-            "elys_ticker": "EDENB",
-            "decimal": "6"
-          }
-        ],
-        "prices": [],
-        "price_feeders": [
-          {
-            "feeder": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
-            "is_active": true
-          },
-          {
-            "feeder": "elys16qgewtplahkqwqa0aqv4pxnxa58ulu48k6crhj",
-            "is_active": true
-          },
-          {
-            "feeder": "elys1zwexzk6ns5ermvag5fc0gtyvrnxyaz9kzaflqf",
-            "is_active": true
-          }
-        ]
-      },
-      "parameter": {
-        "params": {
-          "min_commission_rate": "0.050000000000000000",
-          "max_voting_power": "0.66",
-          "min_self_delegation": "1",
-          "total_blocks_per_year": "6307200",
-          "rewards_data_lifetime": "86400"
-        }
-      },
-      "params": null,
-      "perpetual": {
-        "params": {
-          "leverage_max": "25.000000000000000000",
-          "borrow_interest_rate_max": "0.300000000000000000",
-          "borrow_interest_rate_min": "0.100000000000000000",
-          "borrow_interest_rate_increase": "0.000300000000000000",
-          "borrow_interest_rate_decrease": "0.000300000000000000",
-          "health_gain_factor": "0.000000220000000000",
-          "max_open_positions": "100000",
-          "pool_open_threshold": "0.650000000000000000",
-          "borrow_interest_payment_fund_percentage": "0.100000000000000000",
-          "borrow_interest_payment_fund_address": "elys1xd986tqfwwcxeywcmsvq62mwk4z8cvzsfnplt3",
-          "safety_factor": "1.025000000000000000",
-          "borrow_interest_payment_enabled": true,
-          "whitelisting_enabled": false,
-          "perpetual_swap_fee": "0.001000000000000000",
-          "max_limit_order": "100000",
-          "fixed_funding_rate": "0.500000000000000000",
-          "minimum_long_take_profit_price_ratio": "1.020000000000000000",
-          "maximum_long_take_profit_price_ratio": "11.000000000000000000",
-          "maximum_short_take_profit_price_ratio": "0.980000000000000000",
-          "enable_take_profit_custody_liabilities": false,
-          "weight_breaking_fee_factor": "0.500000000000000000"
-        },
-        "pool_list": [],
-        "mtp_list": [],
-        "address_whitelist": []
-      },
-      "poolaccounted": {
-        "accounted_pool_list": []
-      },
-      "slashing": {
-        "params": {
-          "signed_blocks_window": "30000",
-          "min_signed_per_window": "0.050000000000000000",
-          "downtime_jail_duration": "600s",
-          "slash_fraction_double_sign": "0.050000000000000000",
-          "slash_fraction_downtime": "0.010000000000000000"
-        },
-        "signing_infos": [],
-        "missed_blocks": []
-      },
-      "stablestake": {
-        "params": {
-          "deposit_denom": "uusdc",
-          "redemption_rate": "1.000000000000000000",
-          "epoch_length": "1",
-          "interest_rate": "0.150000000000000000",
-          "interest_rate_max": "0.170000000000000000",
-          "interest_rate_min": "0.120000000000000000",
-          "interest_rate_increase": "0.010000000000000000",
-          "interest_rate_decrease": "0.010000000000000000",
-          "health_gain_factor": "1.000000000000000000",
-          "total_value": "0",
-          "max_leverage_ratio": "0.700000000000000000"
-        },
-        "debt_list": [],
-        "interest_list": []
-      },
-      "staking": {
-        "params": {
-          "unbonding_time": "1209600s",
-          "max_validators": 100,
-          "max_entries": 7,
-          "historical_entries": 10000,
-          "bond_denom": "uelys",
-          "min_commission_rate": "0.050000000000000000"
-        },
-        "last_total_power": "0",
-        "last_validator_powers": [],
-        "validators": [],
-        "delegations": [],
-        "unbonding_delegations": [],
-        "redelegations": [],
-        "exported": false
-      },
-      "tier": {
-        "params": {},
-        "portfolio_list": []
-      },
-      "tokenomics": {
-        "params": {},
-        "airdrop_list": [],
-        "genesis_inflation": null,
-        "time_based_inflation_list": []
-      },
-      "tradeshield": {
-        "params": {
-          "market_order_enabled": true,
-          "stake_enabled": true,
-          "process_orders_enabled": true,
-          "swap_enabled": true,
-          "perpetual_enabled": true,
-          "reward_enabled": true,
-          "leverage_enabled": true,
-          "limit_process_order": "1000000",
-          "reward_percentage": "0.000000000000000000",
-          "margin_error": "0.000000000000000000",
-          "minimum_deposit": "0"
-        },
-        "pending_spot_order_list": [],
-        "pending_spot_order_count": "0",
-        "pending_perpetual_order_list": [],
-        "pending_perpetual_order_count": "0"
-      },
-      "transfer": {
-        "port_id": "transfer",
-        "denom_traces": [],
-        "params": {
-          "send_enabled": true,
-          "receive_enabled": true
-        },
-        "total_escrowed": []
-      },
-      "transferhook": {
-        "params": {
-          "amm_active": true
-        }
-      },
-      "upgrade": {},
-      "vesting": {}
+      ]
     },
-    "consensus": {
+    "authz": {
+      "authorization": []
+    },
+    "bank": {
       "params": {
-        "block": {
-          "max_bytes": "5242880",
-          "max_gas": "75000000"
-        },
-        "evidence": {
-          "max_age_num_blocks": "20000",
-          "max_age_duration": "172800000000000",
-          "max_bytes": "100000"
-        },
-        "validator": {
-          "pub_key_types": [
-            "ed25519"
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [
+        {
+          "address": "elys1yuae8fwjrd5f8zemryun5qglryst9e6tul8qqv",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "1451801220000"
+            }
           ]
         },
-        "version": {
-          "app": "0"
+        {
+          "address": "elys13647xwfw6swdkexzn90xjym4erk3qwh3vq9y4k",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "510000000000"
+            }
+          ]
         },
-        "abci": {
-          "vote_extensions_enable_height": "0"
+        {
+          "address": "elys1467n8thlt50q9cgud37680673f57e47q9u8hzz",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "1451800305000"
+            }
+          ]
+        },
+        {
+          "address": "elys1nhe3tnly5yhyykahujcdm4egzhcstypah0cggu",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "610000305000"
+            }
+          ]
+        },
+        {
+          "address": "elys1we50lf9sw27w6d33z5mukygdcldyganh8w29kh",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "408700305000"
+            }
+          ]
+        },
+        {
+          "address": "elys1zz7y3wzmxm8ga76n29v278pkvhgvynwt7dysc6",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "366000000000"
+            }
+          ]
+        },
+        {
+          "address": "elys174tvh2dty7vsvwn2cfsmkwq8tplqgr5fj77dds",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "152500305000"
+            }
+          ]
+        },
+        {
+          "address": "elys1q2cj4dhmhy49p03sdxmpzvdrwf8xkczyp3wvfu",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "121999695000"
+            }
+          ]
+        },
+        {
+          "address": "elys160w4jskm5ra8qdhh8w5defx3yzxtlgm53y8rgu",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "121999695000"
+            }
+          ]
+        },
+        {
+          "address": "elys136ekw6430ff8ru3jesfjltt8qr4s7j48fklgfz",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "121999695000"
+            }
+          ]
+        },
+        {
+          "address": "elys140ycsxcstxkyfnfjlzya8ncz65u8cschzp33l6",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "121999695000"
+            }
+          ]
+        },
+        {
+          "address": "elys1n6q3dzwngvzfsf2q4qzhx7segsevafx7v5hk5a",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "121999695000"
+            }
+          ]
+        },
+        {
+          "address": "elys17hyxyu0d5j3e8ghlx89afwzwavyxl0sccmua24",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "121999695000"
+            }
+          ]
+        },
+        {
+          "address": "elys1vgzp85p0lpmy4em9hrcxkcvvsa68hua9455gmd",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "121999695000"
+            }
+          ]
+        },
+        {
+          "address": "elys1k4jgnwr4pvkp4ug7su2ha9hf2qnqenuztrljug",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "61000305000"
+            }
+          ]
+        },
+        {
+          "address": "elys123scuwjkz9v778sruaymudvvsfgv0a8wdepk74",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "61000305000"
+            }
+          ]
+        },
+        {
+          "address": "elys1x4fp5gvlh40zwjv50mut0x92kqqv9tr2n4punc",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "24400305000"
+            }
+          ]
+        },
+        {
+          "address": "elys1dqt34yf9cs7dc90s03zp4je9txxuzdnvlharkf",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "12199695000"
+            }
+          ]
+        },
+        {
+          "address": "elys1mwc94les54km8fwsc5629ja8maum8vpud2sdlg",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "12199695000"
+            }
+          ]
+        },
+        {
+          "address": "elys1dkrjn60jgyfnn5utjl5huzuxv5waf64lk9yzv4",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "12199695000"
+            }
+          ]
+        },
+        {
+          "address": "elys12hwxy384npez4qp2d434ml9e0elfrhcpsmvkx7",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "12199695000"
+            }
+          ]
+        },
+        {
+          "address": "elys1gt22m4cyqxd8pwzpmuhyjkldh75l7hxswca7r3",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "178010000000"
+            }
+          ]
+        },
+        {
+          "address": "elys1zxgwtsut7xn90ulzhtfljsms94y8sy2k05qn34",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "6390740125000"
+            }
+          ]
+        },
+        {
+          "address": "elys1twegecwkgjy0ghgmvl5qwq7ntwnghmv8hqrngp",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "124999875000"
+            }
+          ]
+        },
+        {
+          "address": "elys19mk5ka3hhad3fuedm4637d68n2jrvj6gd3g5tj",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "124999875000"
+            }
+          ]
+        },
+        {
+          "address": "elys1q8teur40emyun60et4wh5z6yj5669stgkjv74v",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "124999875000"
+            }
+          ]
+        },
+        {
+          "address": "elys10jcxtfdghw53z24kt3ys7fdgpwhqhk3qnl63vm",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "31249750000"
+            }
+          ]
+        },
+        {
+          "address": "elys1w8zcz8u6f64xrkvl5c3xcjxslzfa7mn6ru44n9",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "25000500000"
+            }
+          ]
         }
+      ],
+      "supply": [
+        {
+          "denom": "uelys",
+          "amount": "13000000000000"
+        }
+      ],
+      "denom_metadata": [],
+      "send_enabled": []
+    },
+    "burner": {
+      "params": {
+        "epoch_identifier": "tenseconds"
+      },
+      "history_list": []
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "ccvconsumer": {
+      "params": {
+        "enabled": false,
+        "blocks_per_distribution_transmission": "1000",
+        "distribution_transmission_channel": "",
+        "provider_fee_pool_addr_str": "",
+        "ccv_timeout_period": "2419200s",
+        "transfer_timeout_period": "3600s",
+        "consumer_redistribution_fraction": "0.75",
+        "historical_entries": "10000",
+        "unbonding_period": "1728000s",
+        "soft_opt_out_threshold": "0",
+        "reward_denoms": [],
+        "provider_reward_denoms": [],
+        "retry_delay_period": "3600s",
+        "consumer_id": "0"
+      },
+      "provider": {
+        "client_state": null,
+        "consensus_state": null,
+        "initial_val_set": []
+      },
+      "new_chain": false
+    },
+    "commitment": {
+      "params": {
+        "vesting_infos": [
+          {
+            "base_denom": "ueden",
+            "vesting_denom": "uelys",
+            "num_blocks": "1555200",
+            "vest_now_factor": "90",
+            "num_max_vestings": "10000"
+          }
+        ],
+        "total_committed": [],
+        "number_of_commitments": "0",
+        "enable_vest_now": false,
+        "start_atom_stakers_height": "0",
+        "end_atom_stakers_height": "0",
+        "start_cadets_height": "0",
+        "end_cadets_height": "0",
+        "start_nft_holders_height": "0",
+        "end_nft_holders_height": "0",
+        "start_governors_height": "0",
+        "end_governors_height": "0"
+      },
+      "commitments": [],
+      "atom_stakers": [],
+      "nft_holders": [],
+      "cadets": [],
+      "governors": []
+    },
+    "consensus": null,
+    "crisis": {
+      "constant_fee": {
+        "denom": "uelys",
+        "amount": "1000"
+      }
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.020000000000000000",
+        "base_proposer_reward": "0.000000000000000000",
+        "bonus_proposer_reward": "0.000000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "epochs": {
+      "epochs": [
+        {
+          "identifier": "band_epoch",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "15s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "ten_days",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "864000s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "five_minutes",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "300s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "day",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "86400s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "fourhours",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "14400s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "halfhour",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "1800s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "hour",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "3600s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "sixhours",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "21600s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "tenseconds",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "10s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "twelvehours",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "43200s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "twohours",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "7200s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "week",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "604800s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        }
+      ]
+    },
+    "estaking": {
+      "params": {
+        "stake_incentives": null,
+        "eden_commit_val": "",
+        "edenb_commit_val": "",
+        "max_eden_reward_apr_stakers": "0.300000000000000000",
+        "eden_boost_apr": "1.000000000000000000",
+        "provider_vesting_epoch_identifier": "ten_days",
+        "provider_staking_rewards_portion": "0.250000000000000000"
+      },
+      "staking_snapshots": []
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "feegrant": {
+      "allowances": []
+    },
+    "feeibc": {
+      "identified_fees": [],
+      "fee_enabled_channels": [],
+      "registered_payees": [],
+      "registered_counterparty_payees": [],
+      "forward_relayers": []
+    },
+    "genutil": {
+      "gen_txs": []
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": [],
+      "votes": [],
+      "proposals": [],
+      "deposit_params": null,
+      "voting_params": null,
+      "tally_params": null,
+      "params": {
+        "min_deposit": [
+          {
+            "denom": "uelys",
+            "amount": "100000000"
+          }
+        ],
+        "max_deposit_period": "1209600s",
+        "voting_period": "432000s",
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000",
+        "min_initial_deposit_ratio": "0.100000000000000000",
+        "proposal_cancel_ratio": "0.500000000000000000",
+        "proposal_cancel_dest": "",
+        "expedited_voting_period": "1800s",
+        "expedited_threshold": "0.667000000000000000",
+        "expedited_min_deposit": [
+          {
+            "denom": "uelys",
+            "amount": "500000000"
+          }
+        ],
+        "burn_vote_quorum": false,
+        "burn_proposal_deposit_prevote": false,
+        "burn_vote_veto": true,
+        "min_deposit_ratio": "0.010000000000000000"
+      },
+      "constitution": ""
+    },
+    "group": {
+      "group_seq": "0",
+      "groups": [],
+      "group_members": [],
+      "group_policy_seq": "0",
+      "group_policies": [],
+      "proposal_seq": "0",
+      "proposals": [],
+      "votes": []
+    },
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "params": {
+          "allowed_clients": [
+            "06-solomachine",
+            "07-tendermint"
+          ]
+        },
+        "create_localhost": false,
+        "next_client_sequence": "0"
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
+        }
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": [],
+        "next_channel_sequence": "0",
+        "params": {
+          "upgrade_timeout": {
+            "height": {
+              "revision_number": "0",
+              "revision_height": "0"
+            },
+            "timestamp": "600000000000"
+          }
+        }
+      }
+    },
+    "interchainaccounts": {
+      "controller_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "ports": [],
+        "params": {
+          "controller_enabled": true
+        }
+      },
+      "host_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "port": "icahost",
+        "params": {
+          "host_enabled": true,
+          "allow_messages": [
+            "*"
+          ]
+        }
+      }
+    },
+    "leveragelp": {
+      "params": {
+        "leverage_max": "10.000000000000000000",
+        "max_open_positions": "9999999999999",
+        "pool_open_threshold": "0.200000000000000000",
+        "safety_factor": "1.100000000000000000",
+        "whitelisting_enabled": false,
+        "epoch_length": "9999999999999",
+        "fallback_enabled": false,
+        "number_per_block": "100"
+      },
+      "pool_list": [],
+      "position_list": [],
+      "address_whitelist": []
+    },
+    "masterchef": {
+      "params": {
+        "lp_incentives": null,
+        "reward_portion_for_lps": "0.600000000000000000",
+        "reward_portion_for_stakers": "0.250000000000000000",
+        "max_eden_reward_apr_lps": "0.500000000000000000",
+        "supported_reward_denoms": [],
+        "protocol_revenue_address": "elys1uqznyaahdmp3ay8zex5cwf729ggdhc45dtys4f"
+      },
+      "external_incentives": [],
+      "external_incentive_index": "0",
+      "pool_infos": [],
+      "pool_reward_infos": [],
+      "user_reward_infos": [],
+      "pool_rewards_accum": []
+    },
+    "oracle": {
+      "params": {
+        "band_channel_source": "channel-1",
+        "oracle_script_id": "37",
+        "multiplier": "18",
+        "ask_count": "4",
+        "min_count": "3",
+        "fee_limit": [
+          {
+            "denom": "uband",
+            "amount": "30"
+          }
+        ],
+        "prepare_gas": "600000",
+        "execute_gas": "600000",
+        "client_id": "band_price_id",
+        "band_epoch": "band_epoch",
+        "price_expiry_time": "86400",
+        "life_time_in_blocks": "1"
+      },
+      "port_id": "oracle",
+      "asset_infos": [
+        {
+          "denom": "uelys",
+          "display": "ELYS",
+          "band_ticker": "ELYS",
+          "elys_ticker": "ELYS",
+          "decimal": "6"
+        },
+        {
+          "denom": "ueden",
+          "display": "EDEN",
+          "band_ticker": "EDEN",
+          "elys_ticker": "EDEN",
+          "decimal": "6"
+        },
+        {
+          "denom": "uedenb",
+          "display": "EDENB",
+          "band_ticker": "EDENB",
+          "elys_ticker": "EDENB",
+          "decimal": "6"
+        }
+      ],
+      "prices": [],
+      "price_feeders": [
+        {
+          "feeder": "elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3",
+          "is_active": true
+        },
+        {
+          "feeder": "elys16qgewtplahkqwqa0aqv4pxnxa58ulu48k6crhj",
+          "is_active": true
+        },
+        {
+          "feeder": "elys1zwexzk6ns5ermvag5fc0gtyvrnxyaz9kzaflqf",
+          "is_active": true
+        }
+      ]
+    },
+    "parameter": {
+      "params": {
+        "min_commission_rate": "0.050000000000000000",
+        "max_voting_power": "0.66",
+        "min_self_delegation": "1",
+        "total_blocks_per_year": "6307200",
+        "rewards_data_lifetime": "86400"
+      }
+    },
+    "params": null,
+    "perpetual": {
+      "params": {
+        "leverage_max": "25.000000000000000000",
+        "borrow_interest_rate_max": "0.300000000000000000",
+        "borrow_interest_rate_min": "0.100000000000000000",
+        "borrow_interest_rate_increase": "0.000300000000000000",
+        "borrow_interest_rate_decrease": "0.000300000000000000",
+        "health_gain_factor": "0.000000220000000000",
+        "max_open_positions": "100000",
+        "pool_open_threshold": "0.650000000000000000",
+        "borrow_interest_payment_fund_percentage": "0.100000000000000000",
+        "borrow_interest_payment_fund_address": "elys1xd986tqfwwcxeywcmsvq62mwk4z8cvzsfnplt3",
+        "safety_factor": "1.025000000000000000",
+        "borrow_interest_payment_enabled": true,
+        "whitelisting_enabled": false,
+        "perpetual_swap_fee": "0.001000000000000000",
+        "max_limit_order": "100000",
+        "fixed_funding_rate": "0.500000000000000000",
+        "minimum_long_take_profit_price_ratio": "1.020000000000000000",
+        "maximum_long_take_profit_price_ratio": "11.000000000000000000",
+        "maximum_short_take_profit_price_ratio": "0.980000000000000000",
+        "enable_take_profit_custody_liabilities": false,
+        "weight_breaking_fee_factor": "0.500000000000000000"
+      },
+      "pool_list": [],
+      "mtp_list": [],
+      "address_whitelist": []
+    },
+    "poolaccounted": {
+      "accounted_pool_list": []
+    },
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "30000",
+        "min_signed_per_window": "0.050000000000000000",
+        "downtime_jail_duration": "600s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "stablestake": {
+      "params": {
+        "deposit_denom": "uusdc",
+        "redemption_rate": "1.000000000000000000",
+        "epoch_length": "1",
+        "interest_rate": "0.150000000000000000",
+        "interest_rate_max": "0.170000000000000000",
+        "interest_rate_min": "0.120000000000000000",
+        "interest_rate_increase": "0.010000000000000000",
+        "interest_rate_decrease": "0.010000000000000000",
+        "health_gain_factor": "1.000000000000000000",
+        "total_value": "0",
+        "max_leverage_ratio": "0.700000000000000000"
+      },
+      "debt_list": [],
+      "interest_list": []
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1209600s",
+        "max_validators": 100,
+        "max_entries": 7,
+        "historical_entries": 10000,
+        "bond_denom": "uelys",
+        "min_commission_rate": "0.050000000000000000"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": [],
+      "validators": [],
+      "delegations": [],
+      "unbonding_delegations": [],
+      "redelegations": [],
+      "exported": false
+    },
+    "tier": {
+      "params": {},
+      "portfolio_list": []
+    },
+    "tokenomics": {
+      "params": {},
+      "airdrop_list": [],
+      "genesis_inflation": null,
+      "time_based_inflation_list": []
+    },
+    "tradeshield": {
+      "params": {
+        "market_order_enabled": true,
+        "stake_enabled": true,
+        "process_orders_enabled": true,
+        "swap_enabled": true,
+        "perpetual_enabled": true,
+        "reward_enabled": true,
+        "leverage_enabled": true,
+        "limit_process_order": "1000000",
+        "reward_percentage": "0.000000000000000000",
+        "margin_error": "0.000000000000000000",
+        "minimum_deposit": "0"
+      },
+      "pending_spot_order_list": [],
+      "pending_spot_order_count": "0",
+      "pending_perpetual_order_list": [],
+      "pending_perpetual_order_count": "0"
+    },
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      },
+      "total_escrowed": []
+    },
+    "transferhook": {
+      "params": {
+        "amm_active": true
+      }
+    },
+    "upgrade": {},
+    "vesting": {}
+  },
+  "consensus": {
+    "params": {
+      "block": {
+        "max_bytes": "5242880",
+        "max_gas": "75000000"
+      },
+      "evidence": {
+        "max_age_num_blocks": "20000",
+        "max_age_duration": "172800000000000",
+        "max_bytes": "100000"
+      },
+      "validator": {
+        "pub_key_types": [
+          "ed25519"
+        ]
+      },
+      "version": {
+        "app": "0"
+      },
+      "abci": {
+        "vote_extensions_enable_height": "0"
       }
     }
   }
-  
+}
