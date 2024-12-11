@@ -504,6 +504,153 @@
             "end_time": "1780565400"
           },
           "start_time": "1749461400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1gt22m4cyqxd8pwzpmuhyjkldh75l7hxswca7r3",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "uelys",
+                "amount": "178010000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1775381400"
+          },
+          "start_time": "1744277400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1twegecwkgjy0ghgmvl5qwq7ntwnghmv8hqrngp",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "uelys",
+                "amount": "124999875000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1775381400"
+          },
+          "start_time": "1744277400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys19mk5ka3hhad3fuedm4637d68n2jrvj6gd3g5tj",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "uelys",
+                "amount": "124999875000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1775381400"
+          },
+          "start_time": "1744277400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1q8teur40emyun60et4wh5z6yj5669stgkjv74v",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "uelys",
+                "amount": "124999875000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1775381400"
+          },
+          "start_time": "1744277400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys10jcxtfdghw53z24kt3ys7fdgpwhqhk3qnl63vm",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "uelys",
+                "amount": "31249750000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1775381400"
+          },
+          "start_time": "1744277400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1w8zcz8u6f64xrkvl5c3xcjxslzfa7mn6ru44n9",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "uelys",
+                "amount": "25000500000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1775381400"
+          },
+          "start_time": "1744277400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1zxgwtsut7xn90ulzhtfljsms94y8sy2k05qn34",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "uelys",
+                "amount": "5515740125000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1775381400"
+          },
+          "start_time": "1744277400"
         }
       ]
     },
@@ -704,12 +851,75 @@
               "amount": "12199695000"
             }
           ]
+        },
+        {
+          "address": "elys1gt22m4cyqxd8pwzpmuhyjkldh75l7hxswca7r3",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "178010000000"
+            }
+          ]
+        },
+        {
+          "address": "elys1zxgwtsut7xn90ulzhtfljsms94y8sy2k05qn34",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "6390740125000"
+            }
+          ]
+        },
+        {
+          "address": "elys1twegecwkgjy0ghgmvl5qwq7ntwnghmv8hqrngp",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "124999875000"
+            }
+          ]
+        },
+        {
+          "address": "elys19mk5ka3hhad3fuedm4637d68n2jrvj6gd3g5tj",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "124999875000"
+            }
+          ]
+        },
+        {
+          "address": "elys1q8teur40emyun60et4wh5z6yj5669stgkjv74v",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "124999875000"
+            }
+          ]
+        },
+        {
+          "address": "elys10jcxtfdghw53z24kt3ys7fdgpwhqhk3qnl63vm",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "31249750000"
+            }
+          ]
+        },
+        {
+          "address": "elys1w8zcz8u6f64xrkvl5c3xcjxslzfa7mn6ru44n9",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "25000500000"
+            }
+          ]
         }
       ],
       "supply": [
         {
           "denom": "uelys",
-          "amount": "6000000000000"
+          "amount": "13000000000000"
         }
       ],
       "denom_metadata": [],
