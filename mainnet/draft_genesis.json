@@ -80,6 +80,20 @@
       "accounts": [
         {
             "@type": "/cosmos.auth.v1beta1.BaseAccount",
+            "address": "elys1akmdyat0d33net2rgqnpm28xhydkhgraptmhey",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+        },
+        {
+            "@type": "/cosmos.auth.v1beta1.BaseAccount",
+            "address": "elys1ykrphaysp9u5m8379f3d7pr9k7t0xq757lr9vj",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+        },
+        {
+            "@type": "/cosmos.auth.v1beta1.BaseAccount",
             "address": "elys17lgqaj8z7hxewc2wncrf4as33l7hdja7ttn4c6",
             "pub_key": null,
             "account_number": "0",
@@ -3085,6 +3099,24 @@
       },
       "balances": [
         {
+          "address": "elys1akmdyat0d33net2rgqnpm28xhydkhgraptmhey",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "3000000000000"
+            }
+          ]
+        },
+        {
+          "address": "elys1ykrphaysp9u5m8379f3d7pr9k7t0xq757lr9vj",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "1000000000000"
+            }
+          ]
+        },
+        {
           "address": "elys1yuae8fwjrd5f8zemryun5qglryst9e6tul8qqv",
           "coins": [
             {
@@ -3970,7 +4002,7 @@
       "supply": [
         {
           "denom": "uelys",
-          "amount": "145683656000000"
+          "amount": "149683656000000"
         }
       ],
       "denom_metadata": [],
