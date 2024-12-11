@@ -1786,6 +1786,101 @@
               ]
             }
           ]
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1a9qavmjnjqrw9h8dj9adlfg9taz0xum7t60jw5",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "uelys",
+                "amount": "36000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1858325400"
+          },
+          "start_time": "1733909400",
+          "vesting_periods": [
+            {
+              "length": "15552000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "4500000000000"
+                }
+              ]
+            },
+            {
+              "length": "15552000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "4500000000000"
+                }
+              ]
+            },
+            {
+              "length": "15552000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "7500000000000"
+                }
+              ]
+            },
+            {
+              "length": "15552000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "7500000000000"
+                }
+              ]
+            },
+            {
+              "length": "15552000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "4500000000000"
+                }
+              ]
+            },
+            {
+              "length": "15552000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "4500000000000"
+                }
+              ]
+            },
+            {
+              "length": "15552000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "1500000000000"
+                }
+              ]
+            },
+            {
+              "length": "15552000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "1500000000000"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2256,12 +2351,21 @@
               "amount": "44500000000000"
             }
           ]
+        },
+        {
+          "address": "elys1a9qavmjnjqrw9h8dj9adlfg9taz0xum7t60jw5",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "36000000000000"
+            }
+          ]
         }
       ],
       "supply": [
         {
           "denom": "uelys",
-          "amount": "75000000000000"
+          "amount": "111000000000000"
         }
       ],
       "denom_metadata": [],
