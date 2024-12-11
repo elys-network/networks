@@ -1,7 +1,7 @@
 {
   "app_name": "elys",
   "app_version": "v1.0.0",
-  "genesis_time": "2024-12-11T15:00:00.000000Z",
+  "genesis_time": "2024-12-11T18:00:00.000000Z",
   "chain_id": "elys-1",
   "initial_height": 1,
   "app_hash": null,
