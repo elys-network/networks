@@ -79,6 +79,13 @@
       },
       "accounts": [
         {
+            "@type": "/cosmos.auth.v1beta1.BaseAccount",
+            "address": "elys17lgqaj8z7hxewc2wncrf4as33l7hdja7ttn4c6",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+        },
+        {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
           "address": "elys13647xwfw6swdkexzn90xjym4erk3qwh3vq9y4k",
           "pub_key": null,
@@ -2253,7 +2260,16 @@
           "coins": [
             {
               "denom": "uelys",
-              "amount": "44500000000000"
+              "amount": "44499999000000"
+            }
+          ]
+        },
+        {
+          "address": "elys17lgqaj8z7hxewc2wncrf4as33l7hdja7ttn4c6",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "1000000000"
             }
           ]
         }
