@@ -2826,6 +2826,245 @@
             "end_time": "1777973400"
           },
           "start_time": "1746869400"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "elys1wk7jwkqt2h9cnpkst85j9n454e4y8znlgk842n",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "uelys",
+                "amount": "21465196000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1796117400"
+          },
+          "start_time": "1733909400",
+          "vesting_periods": [
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "705433000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "705433000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "705433000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "705433000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "705433000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "705433000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "705433000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "705433000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "705433000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "705433000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "705433000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "705433000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "1083333000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "1083334000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "1083333000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "1083333000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "1083334000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "1083333000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "1083333000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "1083334000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "1083333000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "1083333000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "1083334000000"
+                }
+              ]
+            },
+            {
+              "length": "2592000",
+              "amount": [
+                {
+                  "denom": "uelys",
+                  "amount": "1083333000000"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3710,12 +3949,21 @@
               "amount": "1800000000"
             }
           ]
+        },
+        {
+          "address": "elys1wk7jwkqt2h9cnpkst85j9n454e4y8znlgk842n",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "24683656000000"
+            }
+          ]
         }
       ],
       "supply": [
         {
           "denom": "uelys",
-          "amount": "121000000000000"
+          "amount": "145683656000000"
         }
       ],
       "denom_metadata": [],
