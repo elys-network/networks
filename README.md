@@ -11,6 +11,13 @@ This repository contains the official chain configurations and setup instruction
 - **Type**: ICS Consumer Chain (Cosmos Hub)
 - [Setup Instructions](testnet/elysicstestnet-1/README.md)
 
+### Mainnet
+
+- **Chain ID**: elys-1
+- **Status**: Active
+- **Type**: ICS Consumer Chain (Cosmos Hub)
+- [Setup Instructions](mainnet/README.md)
+
 ## Repository Structure
 
 ```
@@ -20,12 +27,16 @@ networks/
 │       ├── README.md         # Setup instructions and chain information
 │       ├── create_node.sh    # Automated node setup script
 │       └── genesis.json      # Chain genesis file
+├── mainnet/
+│       ├── README.md         # Setup instructions and chain information
+│       ├── create_node.sh    # Automated node setup script
+│       └── genesis.json      # Chain genesis file
 └── README.md                 # This file
 ```
 
 ## Quick Start
 
-To join the testnet, follow these steps:
+To join one of the networks, follow these steps:
 
 1. Clone this repository:
 

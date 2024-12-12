@@ -35,6 +35,34 @@ if [ "$MONIKER" = "YOUR_MONIKER" ]; then
     exit 1
 fi
 
+# create the /etc/systemd/system/elysd.service file if it doesn't exist with the following content
+if [ ! -f /etc/systemd/system/elysd.service ]; then
+    sudo tee /etc/systemd/system/elysd.service > /dev/null <<EOF
+[Unit]
+Description=Elys Network Mainnet Node
+After=network-online.target
+
+[Service]
+User=ubuntu
+ExecStart=/home/ubuntu/go/bin/cosmovisor run start
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=10000
+Environment="DAEMON_NAME=elysd"
+Environment="DAEMON_HOME=/home/ubuntu/.elys"
+Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=true"
+Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
+Environment="UNSAFE_SKIP_BACKUP=true"
+
+[Install]
+WantedBy=multi-user.target
+EOF
+fi
+
+# enable the elysd service
+sudo systemctl daemon-reload
+sudo systemctl enable elysd.service
+
 # stop the node
 sudo systemctl stop elysd.service
 
@@ -43,7 +71,13 @@ if [ -d "$HOME/.elys.bak" ]; then
     TIMESTAMP=$(date +%Y%m%d_%H%M%S)
     mv "$HOME/.elys.bak" "$HOME/.elys.bak_$TIMESTAMP"
 fi
-mv "$HOME/.elys" "$HOME/.elys.bak"
+# move the old elys data to the backup folder if there is one
+if [ -d "$HOME/.elys" ]; then
+    mv "$HOME/.elys" "$HOME/.elys.bak"
+fi
+
+# create the $HOME/go/bin folder if it doesn't exist
+mkdir -p $HOME/go/bin
 
 # download the new binary from releases
 echo "Downloading Elys binary..."
@@ -53,6 +87,13 @@ curl -L https://github.com/elys-network/elys/releases/download/$VERSION/elysd-$V
 }
 chmod +x $HOME/go/bin/elysd
 
+# check if $HOME/go/bin is in the PATH otherwise add it to the .bashrc file
+if ! echo $PATH | grep -q "$HOME/go/bin"; then
+    echo "export PATH=\"$HOME/go/bin:\$PATH\"" >> ~/.bashrc
+    export PATH="$HOME/go/bin:$PATH"
+    source ~/.bashrc
+fi
+
 # download the new binary from sources
 # cd $HOME && git clone https://github.com/elys-network/elys.git && cd $HOME/elys && git fetch && git checkout $VERSION && git pull origin $VERSION && git tag -f $VERSION && make install
 
@@ -60,6 +101,12 @@ chmod +x $HOME/go/bin/elysd
 if ! command -v elysd &> /dev/null; then
     echo "elysd binary not found after installation"
     exit 1
+fi
+
+# if cosmovisor is not installed, install it
+if ! command -v cosmovisor &> /dev/null; then
+    echo "cosmovisor not found, installing it..."
+    curl -L https://github.com/cosmos/cosmos-sdk/releases/download/cosmovisor%2Fv1.7.0/cosmovisor-v1.7.0-linux-amd64.tar.gz | tar -xz -C $HOME/go/bin cosmovisor && chmod +x $HOME/go/bin/cosmovisor
 fi
 
 # init the new node
@@ -95,3 +142,9 @@ mkdir -p $HOME/.elys/cosmovisor/upgrades/$VERSION/bin && cp -a $HOME/go/bin/elys
 
 # start the node
 sudo systemctl start elysd.service
+
+# check if the node is running
+sudo systemctl status elysd.service
+
+# check logs
+sudo journalctl -fu elysd.service -o cat
