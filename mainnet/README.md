@@ -32,3 +32,83 @@ gaiad tx provider opt-in 21 \
     --fees 2000uatom \
     --node https://cosmos-rpc.publicnode.com:443
 ```
+
+### 2. Node Setup Options
+
+1. **Clone and Build**
+
+```bash
+git clone https://github.com/elys-network/elys.git
+cd elys
+git checkout v1.0.0
+make install
+elysd init [your-moniker] --chain-id elys-1
+```
+
+2. **Configure Node**
+
+a. Download Genesis File
+
+```bash
+curl -o $HOME/.elys/config/genesis.json https://raw.githubusercontent.com/elys-network/networks/refs/heads/main/mainnet/genesis.json
+```
+
+b. **For Validators**: Replace Validator Key
+
+- Replace `$HOME/.elys/config/priv_validator_key.json` with your cosmoshub's mainnet key
+- Alternative key delegation instructions available [here](https://github.com/cosmos/testnets/blob/master/interchain-security/VALIDATOR_JOINING_GUIDE.md#option-two-use-key-delegation)
+
+c. Configure Node Settings
+
+- Add persistent peers and seeds in `config.toml`
+- Set minimum gas prices in `app.toml`:
+
+### 3. Running the Node
+
+#### Option A: Direct Start
+
+```bash
+elysd start
+```
+
+#### Option B: System Service (Recommended)
+
+1. Create Service File
+
+```bash
+sudo nano /etc/systemd/system/elysd.service
+```
+
+2. Add Service Configuration
+
+```ini
+[Unit]
+Description=Elys Network Mainnet Node
+After=network.target
+
+[Service]
+User=[user]
+ExecStart=$(which elysd) start
+Restart=always
+RestartSec=3
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
+```
+
+3. Enable and Manage Service
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable elysd
+
+# Start node
+sudo systemctl start elysd
+
+# Stop node
+sudo systemctl stop elysd
+
+# Check logs
+sudo journalctl -u elysd -f -o cat
+```
