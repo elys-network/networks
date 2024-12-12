@@ -112,3 +112,27 @@ sudo systemctl stop elysd
 # Check logs
 sudo journalctl -u elysd -f -o cat
 ```
+
+## IBC Connection Infos:
+
+```
+# Chain: cosmoshub-4
+- Client: 07-tendermint-1339
+    * Connection: connection-1073
+        + Channel: channel-1265
+            | Port: provider
+            | Counterparty: channel-0
+        + Channel: channel-1266
+            | Port: transfer
+            | Counterparty: channel-1
+
+# Chain: elys-1
+- Client: 07-tendermint-0
+    * Connection: connection-1
+        + Channel: channel-0
+            | Port: consumer
+            | Counterparty: channel-1265
+        + Channel: channel-1
+            | Port: transfer
+            | Counterparty: channel-1266
+```
