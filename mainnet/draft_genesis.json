@@ -538,7 +538,7 @@
             "original_vesting": [
               {
                 "denom": "uelys",
-                "amount": "178010000000"
+                "amount": "200978750000"
               }
             ],
             "delegated_free": [],
@@ -664,7 +664,7 @@
             "original_vesting": [
               {
                 "denom": "uelys",
-                "amount": "5515740125000"
+                "amount": "5492771375000"
               }
             ],
             "delegated_free": [],
@@ -3310,7 +3310,7 @@
           "coins": [
             {
               "denom": "uelys",
-              "amount": "178010000000"
+              "amount": "200978750000"
             }
           ]
         },
@@ -3319,7 +3319,7 @@
           "coins": [
             {
               "denom": "uelys",
-              "amount": "6390740125000"
+              "amount": "6367771375000"
             }
           ]
         },
@@ -98916,7 +98916,7 @@
         "min_deposit": [
           {
             "denom": "uelys",
-            "amount": "100000000"
+            "amount": "1000000000"
           }
         ],
         "max_deposit_period": "1209600s",
@@ -98932,7 +98932,7 @@
         "expedited_min_deposit": [
           {
             "denom": "uelys",
-            "amount": "500000000"
+            "amount": "5000000000"
           }
         ],
         "burn_vote_quorum": false,
@@ -99110,7 +99110,7 @@
       "params": {
         "min_commission_rate": "0.050000000000000000",
         "max_voting_power": "0.66",
-        "min_self_delegation": "1",
+        "min_self_delegation": "100",
         "total_blocks_per_year": "6307200",
         "rewards_data_lifetime": "86400"
       }
