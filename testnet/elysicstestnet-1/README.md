@@ -91,10 +91,10 @@ c. **For Governors**: Run those commands to register as a governor
   elysd cometbft show-validator
   ```
 
-- Create the validator.json file:
+- Create the governor.json file:
 
 ```bash
-cat <<EOF > /tmp/validator.json
+cat <<EOF > /tmp/governor.json
 {
 	"pubkey": [PUBKEY],
 	"amount": "10000000uelys",
@@ -115,7 +115,7 @@ EOF
 
 ```bash
 elysd tx staking create-validator \
-    /tmp/validator.json \
+    /tmp/governor.json \
     --from [YOUR_KEY] \
     --chain-id elysicstestnet-1 \
     --fees 20000uelys \
