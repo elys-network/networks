@@ -3099,6 +3099,15 @@
       },
       "balances": [
         {
+          "address": "elys17lgqaj8z7hxewc2wncrf4as33l7hdja7ttn4c6",
+          "coins": [
+            {
+              "denom": "uelys",
+              "amount": "1000000000"
+            }
+          ]
+        },
+        {
           "address": "elys1akmdyat0d33net2rgqnpm28xhydkhgraptmhey",
           "coins": [
             {
@@ -3571,7 +3580,7 @@
           "coins": [
             {
               "denom": "uelys",
-              "amount": "44500000000000"
+              "amount": "44499000000000"
             }
           ]
         },
