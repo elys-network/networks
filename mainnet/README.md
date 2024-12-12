@@ -186,7 +186,7 @@ sudo journalctl -u elysd -f -o cat
             | Counterparty: channel-1
 
 # Chain: elys-1
-- Client: 07-tendermint-0
+- Client: 07-tendermint-0 [Atom]
     * Connection: connection-1
         + Channel: channel-0
             | Port: consumer
@@ -194,11 +194,16 @@ sudo journalctl -u elysd -f -o cat
         + Channel: channel-1
             | Port: transfer
             | Counterparty: channel-1266
-- Client: 07-tendermint-3
+- Client: 07-tendermint-3 [Noble]
     * Connection: connection-2
         + Channel: channel-2
             | Port: transfer
             | Counterparty: channel-117
+- Client: 07-tendermint-4 [Axelar]
+    * Connection: connection-3
+        + Channel: channel-3
+        | Port: transfer
+        | Counterparty: channel-163
 
 # Chain: noble-1
 - Client: 07-tendermint-133
@@ -207,4 +212,10 @@ sudo journalctl -u elysd -f -o cat
             | Port: transfer
             | Counterparty: channel-2
 
+# Chain: axelar-dojo-1
+- Client: 07-tendermint-231
+    * Connection: connection-222
+        + Channel: channel-163
+        | Port: transfer
+        | Counterparty: channel-3
 ```
