@@ -35,6 +35,22 @@ gaiad tx provider opt-in 21 \
 
 ### 2. Node Setup Options
 
+#### Option A: Quick Setup Script
+
+```bash
+wget https://raw.githubusercontent.com/elys-network/networks/main/mainnet/create_node.sh
+chmod +x create_node.sh
+./create_node.sh "your-moniker-name"
+```
+
+> **⚠️ Important Note for Validators**:
+>
+> 1. Before running the script, ensure it does not automatically start the node (check and modify the script if needed)
+> 2. After running the script, you must replace the `$HOME/.elys/config/priv_validator_key.json` with your cosmos's provider mainnet `priv_validator_key.json` file
+> 3. Only start the node after completing the key replacement to avoid double signing
+
+#### Option B: Manual Setup
+
 1. **Clone and Build**
 
 ```bash
@@ -62,6 +78,49 @@ c. Configure Node Settings
 
 - Add persistent peers and seeds in `config.toml`
 - Set minimum gas prices in `app.toml`:
+
+```
+minimum-gas-prices = "0.0003uelys,0.001ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349,0.001ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
+```
+
+c. **For Governors**: Run those commands to register as a governor
+
+- Retrieve the governor pubkey:
+
+  ```
+  elysd cometbft show-validator
+  ```
+
+- Create the governor.json file:
+
+```bash
+cat <<EOF > /tmp/governor.json
+{
+	"pubkey": [PUBKEY],
+	"amount": "10000000uelys",
+	"moniker": "[MONIKER]",
+	"identity": "Elys Mainnet Governor",
+	"website": "https://elys.network",
+	"security": "team@elys.network",
+	"details": "validator's (optional) details",
+	"commission-rate": "0.1",
+	"commission-max-rate": "0.2",
+	"commission-max-change-rate": "0.01",
+	"min-self-delegation": "1"
+}
+EOF
+```
+
+- Create the governor:
+
+```bash
+elysd tx staking create-validator \
+    /tmp/governor.json \
+    --from [YOUR_KEY] \
+    --chain-id elys-1 \
+    --fees 20000uelys \
+    --gas auto
+```
 
 ### 3. Running the Node
 

@@ -11,29 +11,29 @@ if [ -z "$1" ]; then
 fi
 
 # set variables
-CHAINID="elysicstestnet-1"
+CHAINID="elys-1"
 MONIKER="$1"
 DENOM="uelys"
 USDC="ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349"
 ATOM="ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
 DBENGINE="pebbledb"
 BLOCKTIME="3s"
-VERSION="v0.54.0"
+VERSION="v1.0.0"
 
-denali="0f9a0d0b74377b6330053131eb31b8e97d527bee@37.27.81.152:26656"
-utopia="7f4a326cd0e3942203e5479f550657e09356c73c@135.181.86.200:26656"
-nirvana="20407fc4733b0bad9b4f5e74f48a535d210259f8@65.21.116.24:26656"
-euphoria="51bfff7ba2bc8ca1e0f99f6411c9642a00ec5c9c@37.187.154.66:26656"
-shangrila="30eb3ba6b509890df40276c0d0eb418ecae88279@109.135.1.86:26656"
+zephyr="7e0e2a7a6c435274399d1df9cf65dc4b8b4ebf04@51.89.64.156:26656"
+thoth="41defad48e55a1f69753d50a0b9686d03502e3c6@51.89.235.111:26656"
+baldur="336b4190e2bbd194509f452ab53f301a361a4349@51.178.89.172:26656"
+izanagi="2a899b63889ac5caa4c0219fa37992fa624b79de@51.161.118.222:26656"
 
-PEERS="$denali,$utopia,$nirvana,$euphoria,$shangrila"
-SEED="$denali"
+PEERS="$zephyr,$thoth,$baldur,$izanagi"
+SEED="$zephyr"
 
 # Add after variables section
 if [ "$MONIKER" = "YOUR_MONIKER" ]; then
     echo "Please set your MONIKER before running this script"
     exit 1
 fi
+
 
 # create the /etc/systemd/system/elysd.service file if it doesn't exist with the following content
 if [ ! -f /etc/systemd/system/elysd.service ]; then
@@ -135,7 +135,7 @@ sed -i -E "s|app-db-backend = \".*\"|app-db-backend = \"$DBENGINE\"|g" $app_toml
 sed -i -E "s|chain-id = \".*\"|chain-id = \"$CHAINID\"|g" $client_toml
 sed -i -E "s|keyring-backend = \"os\"|keyring-backend = \"test\"|g" $client_toml
 
-curl https://raw.githubusercontent.com/elys-network/networks/refs/heads/main/testnet/$CHAINID/genesis.json -o $genesis_json
+curl https://raw.githubusercontent.com/elys-network/networks/refs/heads/main/mainnet/genesis.json -o $genesis_json
 
 # setup cosmovisor
 mkdir -p $HOME/.elys/cosmovisor/upgrades/$VERSION/bin && cp -a $HOME/go/bin/elysd $HOME/.elys/cosmovisor/upgrades/$VERSION/bin/elysd && rm -rf $HOME/.elys/cosmovisor/current && ln -sf $HOME/.elys/cosmovisor/upgrades/$VERSION $HOME/.elys/cosmovisor/current
