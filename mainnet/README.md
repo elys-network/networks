@@ -135,4 +135,17 @@ sudo journalctl -u elysd -f -o cat
         + Channel: channel-1
             | Port: transfer
             | Counterparty: channel-1266
+- Client: 07-tendermint-3
+    * Connection: connection-2
+        + Channel: channel-2
+            | Port: transfer
+            | Counterparty: channel-117
+
+# Chain: noble-1
+- Client: 07-tendermint-133
+    * Connection: connection-130
+        + Channel: channel-117
+            | Port: transfer
+            | Counterparty: channel-2
+
 ```
