@@ -28,6 +28,11 @@
     }
   ],
   "operators": [
-
+    {
+      "discord": {
+        "id": "472287885765378061",
+        "handle": "remiinterblockchainservices"
+      }
+    }
   ]
 }
