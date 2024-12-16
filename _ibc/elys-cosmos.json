@@ -30,6 +30,12 @@
   "operators": [
     {
       "discord": {
+        "id": "267114625567293441",
+        "handle": "Redhaze"
+      }
+    },
+    {
+      "discord": {
         "id": "392559841039745035",
         "handle": "manueldb2"
       }
@@ -44,6 +50,24 @@
       "discord": {
         "id": "750014595409641512",
         "handle": "validatorvn"
+      }
+    },
+    {
+      "discord": {
+        "id": "697032404539277333",
+        "handle": "itrocket"
+      }
+    },
+    {
+      "discord": {
+        "id": "397204139005706240",
+        "handle": "mzonder"
+      }
+    },
+    {
+      "discord": {
+        "id": "824628985488736336",
+        "handle": "Vinjan.Inc"  
       }
     }
   ]

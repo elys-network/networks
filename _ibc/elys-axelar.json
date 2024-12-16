@@ -30,6 +30,12 @@
   "operators": [
     {
       "discord": {
+        "id": "267114625567293441",
+        "handle": "Redhaze"
+      }
+    },
+    {
+      "discord": {
         "id": "653208183325589529",
         "handle": "hottochelli"
       }
@@ -44,6 +50,12 @@
       "discord": {
         "id": "750014595409641512",
         "handle": "validatorvn"
+      }
+    },
+    {
+      "discord": {
+        "id": "397204139005706240",
+        "handle": "mzonder"
       }
     }
   ]
