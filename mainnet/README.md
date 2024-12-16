@@ -235,6 +235,7 @@ sudo journalctl -u elysd -f -o cat
         + Channel: channel-50
             | Port: transfer
             | Counterparty: channel-4
+
 # Chain: akashnet-2
     - Client: 07-tendermint-191
         * Connection: connection-177
