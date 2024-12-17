@@ -28,5 +28,11 @@
     }
   ],
   "operators": [
+    {
+      "discord": {
+        "id": "697032404539277333",
+        "handle": "itrocket"
+      }
+    }
   ]
 }
