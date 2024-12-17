@@ -28,9 +28,17 @@
     }
   ],
   "operators": [
+    {
       "discord": {
         "id": "392559841039745035",
         "handle": "manueldb2"
-      }    
+      }
+    },
+    {
+      "discord": {
+        "id": "697032404539277333",
+        "handle": "itrocket"
+      }
+    }
   ]
 }
