@@ -242,4 +242,13 @@ sudo journalctl -u elysd -f -o cat
             + Channel: channel-129
                 | Port: transfer
                 | Counterparty: channel-5
+    #elys-osmosis:
+        src:
+            chain-id: elys-1
+            client-id: 07-tendermint-7
+            connection-id: connection-6
+        dst:
+            chain-id: osmosis-1
+            client-id: 07-tendermint-3377
+            connection-id: connection-2833
 ```
