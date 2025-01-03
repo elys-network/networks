@@ -214,6 +214,11 @@ sudo journalctl -u elysd -f -o cat
         + Channel: channel-5
             | Port: transfer
             | Counterparty: channel-129
+- Client: 07-tendermint-11 [xion-mainnet-1]
+    * Connection: connection-11
+        + Channel: channel-8
+            | Port: transfer
+            | Counterparty: channel-9
 
 # Chain: noble-1
 - Client: 07-tendermint-133
@@ -251,4 +256,12 @@ sudo journalctl -u elysd -f -o cat
             chain-id: osmosis-1
             client-id: 07-tendermint-3377
             connection-id: connection-2833
-```
+
+# Chain: xion-mainnet-1
+    - Client: 07-tendermint-7
+        * Connection: connection-8
+            + Channel: channel-9
+                | Port: transfer
+                | Counterparty: channel-8
+
+    ```
