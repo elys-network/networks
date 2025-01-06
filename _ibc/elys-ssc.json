@@ -1,22 +1,22 @@
 {
   "chain_1": {
     "chain_name": "elys",
-    "client_id": "07-tendermint-11",
-    "connection_id": "connection-11"
+    "client_id": "07-tendermint-12",
+    "connection_id": "connection-12"
   },
   "chain_2": {
-    "chain_name": "xion",
-    "client_id": "07-tendermint-7",
-    "connection_id": "connection-8"
+    "chain_name": "ssc",
+    "client_id": "07-tendermint-26",
+    "connection_id": "connection-21"
   },
   "channels": [
     {
       "chain_1": {
-        "channel_id": "channel-8",
+        "channel_id": "channel-9",
         "port_id": "transfer"
       },
       "chain_2": {
-        "channel_id": "channel-9",
+        "channel_id": "channel-35",
         "port_id": "transfer"
       },
       "ordering": "unordered",
