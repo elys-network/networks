@@ -5,7 +5,7 @@
     "connection_id": "connection-10"
   },
   "chain_2": {
-    "chain_name": "axelar",
+    "chain_name": "fetch",
     "client_id": "07-tendermint-85",
     "connection_id": "connection-59"
   },
