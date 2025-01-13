@@ -27,5 +27,11 @@
       }
     }
   ],
-  "operators": []
+  "operators": [    
+    {
+      "discord": {
+        "id": "392559841039745035",
+        "handle": "manueldb2"
+      }
+    }]
 }
