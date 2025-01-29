@@ -202,8 +202,33 @@ sudo journalctl -u elysd -f -o cat
 - Client: 07-tendermint-4 [Axelar]
     * Connection: connection-3
         + Channel: channel-3
-        | Port: transfer
-        | Counterparty: channel-163
+            | Port: transfer
+            | Counterparty: channel-163
+- Client: 07-tendermint-5 [Celestia]
+    * Connection: connection-4
+        + Channel: channel-4
+            | Port: transfer
+            | Counterparty: channel-50
+- Client: 07-tendermint-6 [akashnet-2]
+    * Connection: connection-5
+        + Channel: channel-5
+            | Port: transfer
+            | Counterparty: channel-129
+- Client: 07-tendermint-10 [fetchhub-4]
+    * Connection: connection-10
+        + Channel: channel-7
+            | Port: transfer
+            | Counterparty: channel-34
+- Client: 07-tendermint-11 [xion-mainnet-1]
+    * Connection: connection-11
+        + Channel: channel-8
+            | Port: transfer
+            | Counterparty: channel-9
+- Client: 07-tendermint-12 [ssc-1]
+    * Connection: connection-12
+        + Channel: channel-9
+            | Port: transfer
+            | Counterparty: channel-35
 
 # Chain: noble-1
 - Client: 07-tendermint-133
@@ -216,6 +241,51 @@ sudo journalctl -u elysd -f -o cat
 - Client: 07-tendermint-231
     * Connection: connection-222
         + Channel: channel-163
-        | Port: transfer
-        | Counterparty: channel-3
+            | Port: transfer
+            | Counterparty: channel-3
+
+# Chain: celestia
+- Client: 07-tendermint-95
+    * Connection: connection-65
+        + Channel: channel-50
+            | Port: transfer
+            | Counterparty: channel-4
+
+# Chain: akashnet-2
+    - Client: 07-tendermint-191
+        * Connection: connection-177
+            + Channel: channel-129
+                | Port: transfer
+                | Counterparty: channel-5
+
+    #elys-osmosis:
+        src:
+            chain-id: elys-1
+            client-id: 07-tendermint-7
+            connection-id: connection-6
+        dst:
+            chain-id: osmosis-1
+            client-id: 07-tendermint-3377
+            connection-id: connection-2833
+
+# Chain: xion-mainnet-1
+    - Client: 07-tendermint-7
+        * Connection: connection-8
+            + Channel: channel-9
+                | Port: transfer
+                | Counterparty: channel-8
+
+# Chain: ssc-1
+    - Client: 07-tendermint-26
+        * Connection: connection-21
+        + Channel: channel-35
+            | Port: transfer
+            | Counterparty: channel-9
+
+# Chain: fetchhub-4
+    - Client: 07-tendermint-85
+        * Connection: connection-59
+            + Channel: channel-34
+                | Port: transfer
+                | Counterparty: channel-7
 ```
