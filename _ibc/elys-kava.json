@@ -1,0 +1,38 @@
+{
+  "chain_1": {
+    "chain_name": "elys",
+    "client_id": "07-tendermint-19",
+    "connection_id": "connection-16"
+  },
+  "chain_2": {
+    "chain_name": "kava",
+    "client_id": "07-tendermint-177",
+    "connection_id": "connection-221"
+  },
+  "channels": [
+    {
+      "chain_1": {
+        "channel_id": "channel-13",
+        "port_id": "transfer"
+      },
+      "chain_2": {
+        "channel_id": "channel-156",
+        "port_id": "transfer"
+      },
+      "ordering": "unordered",
+      "version": "ics20-1",
+      "tags": {
+        "status": "live",
+        "preferred": true
+      }
+    }
+  ],
+  "operators": [
+     {
+      "discord": {
+        "id": "472287885765378061",
+        "handle": "remiinterblockchainservices"
+      }
+    }
+  ]
+}
