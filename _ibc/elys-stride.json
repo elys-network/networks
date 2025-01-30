@@ -1,0 +1,31 @@
+{
+    "chain_1": {
+        "chain_name": "elys",
+        "client_id": "07-tendermint-39",
+        "connection_id": "connection-20"
+    },
+    "chain_2": {
+        "chain_name": "stride",
+        "client_id": "07-tendermint-149",
+        "connection_id": "connection-150"
+    },
+    "channels": [
+        {
+            "chain_1": {
+                "channel_id": "channel-17",
+                "port_id": "transfer"
+            },
+            "chain_2": {
+                "channel_id": "channel-295",
+                "port_id": "transfer"
+            },
+            "ordering": "unordered",
+            "version": "ics20-1",
+            "tags": {
+                "status": "live",
+                "preferred": true
+            }
+        }
+    ],
+    "operators": []
+}
