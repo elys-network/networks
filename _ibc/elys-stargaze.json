@@ -1,0 +1,38 @@
+{
+  "chain_1": {
+    "chain_name": "elys",
+    "client_id": "07-tendermint-33",
+    "connection_id": "connection-18"
+  },
+  "chain_2": {
+    "chain_name": "stargaze",
+    "client_id": "07-tendermint-374",
+    "connection_id": "connection-334"
+  },
+  "channels": [
+    {
+      "chain_1": {
+        "channel_id": "channel-15",
+        "port_id": "transfer"
+      },
+      "chain_2": {
+        "channel_id": "channel-437",
+        "port_id": "transfer"
+      },
+      "ordering": "unordered",
+      "version": "ics20-1",
+      "tags": {
+        "status": "live",
+        "preferred": true
+      }
+    }
+  ],
+  "operators": [
+    {
+      "discord": {
+        "id": "397204139005706240",
+        "handle": "mzonder"
+      }
+    }
+  ]
+}
