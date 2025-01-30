@@ -48,6 +48,36 @@
     },
     {
       "discord": {
+        "id": "875319025058594896",
+        "handle": "thomas_highstakes"
+      }
+    },
+    {
+      "discord": {
+        "id": "934015758785212436",
+        "handle": "genznodes"
+      }
+    },
+    {
+      "discord": {
+        "id": "254732994814672906",
+        "handle": "ziggyc"
+      }
+    },
+    {
+      "discord": {
+        "id": "406845516266209280",
+        "handle": "aries_1504"
+      }
+    },
+    {
+      "discord": {
+        "id": "750014595409641512",
+        "handle": "validatorvn"
+      }
+    },
+    {
+      "discord": {
         "id": "697032404539277333",
         "handle": "itrocket"
       }
@@ -61,7 +91,13 @@
     {
       "discord": {
         "id": "824628985488736336",
-        "handle": "Vinjan.Inc"  
+        "handle": "Vinjan.Inc"
+      }
+    },
+    {
+      "discord": {
+        "id": "360378012543483906",
+        "handle": "liver23"
       }
     }
   ]

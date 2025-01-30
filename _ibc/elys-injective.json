@@ -1,22 +1,22 @@
 {
   "chain_1": {
     "chain_name": "elys",
-    "client_id": "07-tendermint-6",
-    "connection_id": "connection-5"
+    "client_id": "07-tendermint-13",
+    "connection_id": "connection-13"
   },
   "chain_2": {
-    "chain_name": "akashnet",
-    "client_id": "07-tendermint-191",
-    "connection_id": "connection-177"
+    "chain_name": "injective",
+    "client_id": "07-tendermint-290",
+    "connection_id": "connection-294"
   },
   "channels": [
     {
       "chain_1": {
-        "channel_id": "channel-5",
+        "channel_id": "channel-10",
         "port_id": "transfer"
       },
       "chain_2": {
-        "channel_id": "channel-129",
+        "channel_id": "channel-421",
         "port_id": "transfer"
       },
       "ordering": "unordered",
@@ -30,8 +30,8 @@
   "operators": [
     {
       "discord": {
-        "id": "653208183325589529",
-        "handle": "hottochelli"
+        "id": "875319025058594896",
+        "handle": "thomas_highstakes"
       }
     }
   ]
