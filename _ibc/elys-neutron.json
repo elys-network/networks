@@ -1,22 +1,22 @@
 {
   "chain_1": {
     "chain_name": "elys",
-    "client_id": "07-tendermint-6",
-    "connection_id": "connection-5"
+    "client_id": "07-tendermint-36",
+    "connection_id": "connection-19"
   },
   "chain_2": {
-    "chain_name": "akashnet",
-    "client_id": "07-tendermint-191",
-    "connection_id": "connection-177"
+    "chain_name": "neutron",
+    "client_id": "07-tendermint-152",
+    "connection_id": "connection-112"
   },
   "channels": [
     {
       "chain_1": {
-        "channel_id": "channel-5",
+        "channel_id": "channel-16",
         "port_id": "transfer"
       },
       "chain_2": {
-        "channel_id": "channel-129",
+        "channel_id": "channel-6476",
         "port_id": "transfer"
       },
       "ordering": "unordered",
@@ -30,14 +30,14 @@
   "operators": [
     {
       "discord": {
-        "id": "653208183325589529",
-        "handle": "hottochelli"
+        "id": "397204139005706240",
+        "handle": "mzonder"
       }
     },
     {
       "discord": {
-        "id": "392559841039745035",
-        "handle": "manueldb2"
+        "id": "472287885765378061",
+        "handle": "remiinterblockchainservices"
       }
     }
   ]
