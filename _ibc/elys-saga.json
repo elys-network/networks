@@ -27,5 +27,12 @@
       }
     }
   ],
-  "operators": []
+  "operators": [
+  {
+      "discord": {
+        "id": "1194852913923768320",
+        "handle": "node39"
+    }
+   }
+  ]
 }

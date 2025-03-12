@@ -53,6 +53,12 @@
       }
     },
     {
+       "discord": {
+         "id": "750014595409641512",
+         "handle": "validatorvn"
+       }
+     },
+    {
       "discord": {
         "id": "653208183325589529",
         "handle": "hottochelli"
@@ -62,6 +68,12 @@
       "discord": {
         "id": "472287885765378061",
         "handle": "remiinterblockchainservices"
+      }
+     },
+     {
+      "discord": {
+        "id": "1194852913923768320",
+        "handle": "node39"
       }
     }
   ]

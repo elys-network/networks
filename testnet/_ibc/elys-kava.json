@@ -1,22 +1,22 @@
 {
   "chain_1": {
     "chain_name": "elys",
-    "client_id": "07-tendermint-11",
-    "connection_id": "connection-11"
+    "client_id": "07-tendermint-9",
+    "connection_id": "connection-6"
   },
   "chain_2": {
-    "chain_name": "xion",
-    "client_id": "07-tendermint-7",
-    "connection_id": "connection-8"
+    "chain_name": "kava",
+    "client_id": "07-tendermint-31",
+    "connection_id": "connection-91"
   },
   "channels": [
     {
       "chain_1": {
-        "channel_id": "channel-8",
+        "channel_id": "channel-7",
         "port_id": "transfer"
       },
       "chain_2": {
-        "channel_id": "channel-9",
+        "channel_id": "channel-79",
         "port_id": "transfer"
       },
       "ordering": "unordered",
@@ -28,10 +28,10 @@
     }
   ],
   "operators": [
-  {
+    {
       "discord": {
-        "id": "1194852913923768320",
-        "handle": "node39"
+        "id": "472287885765378061",
+        "handle": "remiinterblockchainservices"
       }
     }
   ]
